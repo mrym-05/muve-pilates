@@ -1,0 +1,42 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* variables */
+:root {
+    /* COLORS */
+
+    /* greens */
+    --primary-color: #4e1414;
+    --primary-color-darker: #240808;
+    --primary-color-highlight: #532d26;
+
+    /* light neutrals */
+    --secondary-color: #ecdbd6;
+    --secondary-color-darker: #cfb0a8;
+
+    /* FONTS */
+    --heading-font: "Cormorant Garamond", Georgia, serif;
+    --body-font: "Inter", Arial, sans-serif;
+}
+
+/* general */
+body {
+    font-family: var(--body-font);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+html, 
+body {
+    height: 100%;
+}
+
+/* internal link scrolling */
+html {
+    scroll-behavior: smooth;
+}
