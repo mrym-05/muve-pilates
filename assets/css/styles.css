@@ -6,7 +6,7 @@
     /* COLORS */
 
     /* greens */
-    --primary-color: #4e1414;
+    --primary-color: #441912;
     --primary-color-darker: #240808;
     --primary-color-highlight: #532d26;
 
@@ -39,4 +39,35 @@ body {
 /* internal link scrolling */
 html {
     scroll-behavior: smooth;
+}
+
+/* navbar */
+.navbar {
+    background-color: var(--primary-color);
+}
+
+/* hero */
+.hero {
+    width: 100%;
+}
+
+.hero-container {
+    position: relative;
+}
+
+.hero {
+    width: 100%;
+    height: 85vh;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    max-width: 600px;
 }

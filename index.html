@@ -24,10 +24,10 @@
 <body>
     <header>
         <!-- bootstrap navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container navbar-container">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+            <div class="container-fluid navbar-container">
                 <a class="navbar-brand" href="index.html"><img src="" alt="Logo" width="40" height="40"
-                        class="d-inline-block align-text-top">x
+                        class="d-inline-block align-text-top">Müve
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -65,249 +65,47 @@
     </header>
 
     <main>
-        <div class="container">
+        <!-- hero image -->
 
-            <section class="hero py-5">
-                <div class="container">
-                    <div class="row align-items-center">
+        <section class="hero-container">
 
-                        <div class="col-lg-6">
-                            <h1>Move Better. Feel Stronger.</h1>
+            <img class="hero" src="assets/images/index-hero-img.webp" alt="Interior photo of Müve Pilates">
 
-                            <p>
-                                Discover reformer Pilates classes designed to build strength,
-                                improve mobility, and help you feel your best in a welcoming
-                                studio.
-                            </p>
-
-                            <a href="schedule.html" class="btn btn-primary me-2">
-                                Book a Class
-                            </a>
-
-                            <a href="packages.html" class="btn btn-outline-dark">
-                                View Packages
-                            </a>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <!-- image goes here -->
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-            <section class="classes py-5">
-                <div class="container">
-
-                    <h2 class="text-center mb-5">
-                        Find Your Perfect Class
-                    </h2>
-
-                    <div class="row g-4">
-                        <div class="col-md-6 col-lg-3">
-                            <div class="card h-100">
-                                <div class="card-body">
-                                    <h3 class="h5">Reformer</h3>
-                                    <p>
-                                        Experience a full-body workout on our reformer machines, combining strength,
-                                        flexibility, and controlled movement. Build confidence, improve posture, and
-                                        leave feeling stronger and more balanced.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-lg-3">
-                            <div class="card h-100">
-                                <div class="card-body">
-                                    <h3 class="h5">Jumpboard</h3>
-                                    <p>
-                                        A dynamic reformer class that adds a low-impact cardio challenge to your
-                                        workout. Improve endurance, coordination, and control through smooth, energising
-                                        movement.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-lg-3">
-                            <div class="card h-100">
-                                <div class="card-body">
-                                    <h3 class="h5">Mat</h3>
-                                    <p>
-                                        Focus on the fundamentals of Pilates through mindful, mat-based exercises.
-                                        Develop core strength, stability, and body awareness while improving everyday
-                                        movement.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-lg-3">
-                            <div class="card h-100">
-                                <div class="card-body">
-                                    <h3 class="h5">Stength</h3>
-                                    <p>
-                                        A reformer-based class that blends traditional Pilates with resistance training.
-                                        Build strength, endurance, and stability through challenging full-body workouts.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            </section>
-
-            <section class="class-guide py-5">
-                <h3 class="text-center mb-3">Not Sure Where to Start?</h3>
-
-                <p class="text-center mb-4">
-                    All of our classes are suitable for every experience level, from complete beginners
-                    to experienced Pilates enthusiasts. Explore each class below to find the right fit
-                    for your goals.
+            <div class="hero-content">
+                <h1 class="hero-tagline"></h1>müve better, müve stronger, müve you.</h1>
+                <p>
+                    Discover reformer Pilates classes designed to build strength,
+                    improve mobility, and help you feel your best in a welcoming studio.
                 </p>
 
-                <div class="accordion" id="classAccordion">
+                <a href="schedule.html" class="btn btn-primary me-2">
+                    Book a Class
+                </a>
 
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#reformer">
-                                Beginner
-                            </button>
-                        </h2>
+                <a href="packages.html" class="btn btn-outline-light">
+                    View Packages
+                </a>
+            </div>
+        </section>
 
-                        <div id="reformer" class="accordion-collapse collapse" data-bs-parent="#classAccordion">
-                            <div class="accordion-body">
-                                New to Pilates? Beginner classes focus on learning the fundamentals, building
-                                confidence, and developing proper technique in a supportive environment.
-                                Our instructors will guide you through each movement at a comfortable pace.
-                                <br>
-                                We recommend completing a minimum of 5 beginner classes before progressing to
-                                higher
-                                levels.
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#jumpboard">
-                                Intermediate
-                            </button>
-                        </h2>
 
-                        <div id="jumpboard" class="accordion-collapse collapse" data-bs-parent="#classAccordion">
-                            <div class="accordion-body">
-                                Suitable for those with previous Pilates experience who are confident with the
-                                basics. Expect more challenging exercises, increased intensity, and
-                                opportunities
-                                to further develop strength, balance, and control.</div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#jumpboard">
-                                All-Levels
-                            </button>
-                        </h2>
-
-                        <div id="jumpboard" class="accordion-collapse collapse" data-bs-parent="#classAccordion">
-                            <div class="accordion-body">
-                                Open to everyone, regardless of experience. Exercises can be adapted to suit
-                                your individual ability, allowing both beginners and experienced participants to
-                                benefit from the same class.</div>
-                        </div>
-                    </div>
-            </section>
-
-            <section class="get-started py-5">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 text-center">
-
-                        <h2>New to Pilates?</h2>
-
-                        <p class="offer-price">
-                            3 Introductory Classes for £65
-                        </p>
-
-                        <p>
-                            Start your Pilates journey with our introductory offer.
-                            Explore our studio, meet our instructors, and discover
-                            the benefits of movement in a welcoming and supportive
-                            environment.
-                        </p>
-
-                        <a href="packages.html" class="btn btn-primary">
-                            Claim Intro Offer
-                        </a>
-
-                    </div>
-                </div>
-            </section>
-
-            <section class="gallery py-5">
+        <section class="classes py-5">
+            <div class="container">
 
                 <h2 class="text-center mb-5">
-                    Take a Look Inside
+                    Find Your Perfect Class
                 </h2>
 
                 <div class="row g-4">
-
-                    <div class="col-md-4">
-                        image
-                    </div>
-
-                    <div class="col-md-4">
-                        image
-                    </div>
-
-                    <div class="col-md-4">
-                        image
-                    </div>
-
-                </div>
-
-            </section>
-
-            <!-- reviews -->
-
-            <section class="reviews py-5 text-center">
-                <h2>Trusted by Our Community</h2>
-
-                <h3 class="display-4"><i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </h3>
-
-                <p class="lead">
-                    5-Star Google Rating
-                </p>
-
-                <p>
-                    Proudly rated 5 stars by our members for expert instruction,
-                    a welcoming atmosphere, and premium Pilates experiences.
-                </p>
-            </section>
-
-            <!-- why we're different / bootstrap cards -->
-
-            <section class="why-us py-5">
-                <h2 class="text-center mb-5">Why Choose Muve?</h2>
-
-                <div class="row g-4">
-
                     <div class="col-md-6 col-lg-3">
                         <div class="card h-100">
-                            <div class="card-body text-center">
-                                <h3 class="h5">Expert Instructors</h3>
+                            <div class="card-body">
+                                <h3 class="h5">Reformer</h3>
                                 <p>
-                                    Experienced teachers committed to helping you move with confidence.
+                                    Experience a full-body workout on our reformer machines, combining strength,
+                                    flexibility, and controlled movement. Build confidence, improve posture, and
+                                    leave feeling stronger and more balanced.
                                 </p>
                             </div>
                         </div>
@@ -315,10 +113,12 @@
 
                     <div class="col-md-6 col-lg-3">
                         <div class="card h-100">
-                            <div class="card-body text-center">
-                                <h3 class="h5">Small Classes</h3>
+                            <div class="card-body">
+                                <h3 class="h5">Jumpboard</h3>
                                 <p>
-                                    Enjoy personalised support in a welcoming studio environment.
+                                    A dynamic reformer class that adds a low-impact cardio challenge to your
+                                    workout. Improve endurance, coordination, and control through smooth, energising
+                                    movement.
                                 </p>
                             </div>
                         </div>
@@ -326,10 +126,12 @@
 
                     <div class="col-md-6 col-lg-3">
                         <div class="card h-100">
-                            <div class="card-body text-center">
-                                <h3 class="h5">Coffee Bar</h3>
+                            <div class="card-body">
+                                <h3 class="h5">Mat</h3>
                                 <p>
-                                    Grab a coffee before or after class and make time for yourself.
+                                    Focus on the fundamentals of Pilates through mindful, mat-based exercises.
+                                    Develop core strength, stability, and body awareness while improving everyday
+                                    movement.
                                 </p>
                             </div>
                         </div>
@@ -337,115 +139,306 @@
 
                     <div class="col-md-6 col-lg-3">
                         <div class="card h-100">
-                            <div class="card-body text-center">
-                                <h3 class="h5">Premium Equipment</h3>
+                            <div class="card-body">
+                                <h3 class="h5">Stength</h3>
                                 <p>
-                                    Train using high-quality reformers designed for every level.
+                                    A reformer-based class that blends traditional Pilates with resistance training.
+                                    Build strength, endurance, and stability through challenging full-body workouts.
                                 </p>
                             </div>
                         </div>
                     </div>
+                </div>
+        </section>
 
+        <section class="class-guide py-5">
+            <h3 class="text-center mb-3">Not Sure Where to Start?</h3>
+
+            <p class="text-center mb-4">
+                All of our classes are suitable for every experience level, from complete beginners
+                to experienced Pilates enthusiasts. Explore each class below to find the right fit
+                for your goals.
+            </p>
+
+            <div class="accordion" id="classAccordion">
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#reformer">
+                            Beginner
+                        </button>
+                    </h2>
+
+                    <div id="reformer" class="accordion-collapse collapse" data-bs-parent="#classAccordion">
+                        <div class="accordion-body">
+                            New to Pilates? Beginner classes focus on learning the fundamentals, building
+                            confidence, and developing proper technique in a supportive environment.
+                            Our instructors will guide you through each movement at a comfortable pace.
+                            <br>
+                            We recommend completing a minimum of 5 beginner classes before progressing to
+                            higher
+                            levels.
+                        </div>
+                    </div>
                 </div>
 
-                <div class="text-center mt-5">
-                    <a href="schedule.html" class="btn btn-primary">
-                        Book Your First Class
-                    </a>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#jumpboard">
+                            Intermediate
+                        </button>
+                    </h2>
+
+                    <div id="jumpboard" class="accordion-collapse collapse" data-bs-parent="#classAccordion">
+                        <div class="accordion-body">
+                            Suitable for those with previous Pilates experience who are confident with the
+                            basics. Expect more challenging exercises, increased intensity, and
+                            opportunities
+                            to further develop strength, balance, and control.</div>
+                    </div>
                 </div>
-            </section>
 
-            <!-- stats banner -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#jumpboard">
+                            All-Levels
+                        </button>
+                    </h2>
 
-            <section class="stats py-5">
-                <div class="row text-center">
-
-                    <div class="col-6 col-md-3">
-                        <h2>9</h2>
-                        <p>Reformer Beds</p>
+                    <div id="jumpboard" class="accordion-collapse collapse" data-bs-parent="#classAccordion">
+                        <div class="accordion-body">
+                            Open to everyone, regardless of experience. Exercises can be adapted to suit
+                            your individual ability, allowing both beginners and experienced participants to
+                            benefit from the same class.</div>
                     </div>
-
-                    <div class="col-6 col-md-3">
-                        <h2>50</h2>
-                        <p>Minute Classes</p>
-                    </div>
-
-                    <div class="col-6 col-md-3">
-                        <h2>7</h2>
-                        <p>Days a Week</p>
-                    </div>
-
-                    <div class="col-6 col-md-3">
-                        <h2>100+</h2>
-                        <p>Happy Members</p>
-                    </div>
-
                 </div>
-            </section>
+        </section>
 
-            <!-- new here -->
+        <section class="get-started py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
 
-            <section class="new-here py-5">
-                <h2 class="text-center mb-5">Your First Visit</h2>
+                    <h2>New to Pilates?</h2>
 
-                <div class="row g-4">
+                    <p class="offer-price">
+                        3 Introductory Classes for £65
+                    </p>
 
-                    <div class="col-md-6 col-lg-3">
-                        <h3 class="h5">Arrive Early</h3>
-                        <p>
-                            Please arrive 10 minutes before your first class.
-                        </p>
-                    </div>
+                    <p>
+                        Start your Pilates journey with our introductory offer.
+                        Explore our studio, meet our instructors, and discover
+                        the benefits of movement in a welcoming and supportive
+                        environment.
+                    </p>
 
-                    <div class="col-md-6 col-lg-3">
-                        <h3 class="h5">What to Wear</h3>
-                        <p>
-                            Comfortable activewear and grip socks are recommended.
-                        </p>
-                    </div>
-
-                    <div class="col-md-6 col-lg-3">
-                        <h3 class="h5">Beginner Friendly</h3>
-                        <p>
-                            No prior Pilates experience is required.
-                        </p>
-                    </div>
-
-                    <div class="col-md-6 col-lg-3">
-                        <h3 class="h5">Stay for Coffee</h3>
-                        <p>
-                            Relax before or after class in our coffee area.
-                        </p>
-                    </div>
-
-                </div>
-            </section>
-
-            <!-- socials -->
-
-            <section class="socials py-5 text-center">
-
-                <h2>Follow Our Journey</h2>
-
-                <p>
-                    Stay updated with class news, wellness tips and behind-the-scenes content.
-                </p>
-
-                <div class="social-links">
-
-                    <a href="https://www.instagram.com/popular/muve-pilates-studio-ilford/?hl=en" target="_blank"
-                        rel="noopener" aria-label="Follow us on Instagram">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-
-                    <a href="https://www.tiktok.com/@muvepilates" target="_blank" rel="noopener"
-                        aria-label="Follow us on TikTok">
-                        <i class="fa-brands fa-tiktok"></i>
+                    <a href="packages.html" class="btn btn-primary">
+                        Claim Intro Offer
                     </a>
 
                 </div>
+            </div>
+        </section>
 
-            </section>
+        <section class="gallery py-5">
+
+            <h2 class="text-center mb-5">
+                Take a Look Inside
+            </h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    image
+                </div>
+
+                <div class="col-md-4">
+                    image
+                </div>
+
+                <div class="col-md-4">
+                    image
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- reviews -->
+
+        <section class="reviews py-5 text-center">
+            <h2>Trusted by Our Community</h2>
+
+            <h3 class="display-4"><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </h3>
+
+            <p class="lead">
+                5-Star Google Rating
+            </p>
+
+            <p>
+                Proudly rated 5 stars by our members for expert instruction,
+                a welcoming atmosphere, and premium Pilates experiences.
+            </p>
+        </section>
+
+        <!-- why we're different / bootstrap cards -->
+
+        <section class="why-us py-5">
+            <h2 class="text-center mb-5">Why Choose Muve?</h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h3 class="h5">Expert Instructors</h3>
+                            <p>
+                                Experienced teachers committed to helping you move with confidence.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h3 class="h5">Small Classes</h3>
+                            <p>
+                                Enjoy personalised support in a welcoming studio environment.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h3 class="h5">Coffee Bar</h3>
+                            <p>
+                                Grab a coffee before or after class and make time for yourself.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h3 class="h5">Premium Equipment</h3>
+                            <p>
+                                Train using high-quality reformers designed for every level.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="schedule.html" class="btn btn-primary">
+                    Book Your First Class
+                </a>
+            </div>
+        </section>
+
+        <!-- stats banner -->
+
+        <section class="stats py-5">
+            <div class="row text-center">
+
+                <div class="col-6 col-md-3">
+                    <h2>9</h2>
+                    <p>Reformer Beds</p>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <h2>50</h2>
+                    <p>Minute Classes</p>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <h2>7</h2>
+                    <p>Days a Week</p>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <h2>100+</h2>
+                    <p>Happy Members</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- new here -->
+
+        <section class="new-here py-5">
+            <h2 class="text-center mb-5">Your First Visit</h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-3">
+                    <h3 class="h5">Arrive Early</h3>
+                    <p>
+                        Please arrive 10 minutes before your first class.
+                    </p>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h3 class="h5">What to Wear</h3>
+                    <p>
+                        Comfortable activewear and grip socks are recommended.
+                    </p>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h3 class="h5">Beginner Friendly</h3>
+                    <p>
+                        No prior Pilates experience is required.
+                    </p>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h3 class="h5">Stay for Coffee</h3>
+                    <p>
+                        Relax before or after class in our coffee area.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- socials -->
+
+        <section class="socials py-5 text-center">
+
+            <h2>Follow Our Journey</h2>
+
+            <p>
+                Stay updated with class news, wellness tips and behind-the-scenes content.
+            </p>
+
+            <div class="social-links">
+
+                <a href="https://www.instagram.com/popular/muve-pilates-studio-ilford/?hl=en" target="_blank"
+                    rel="noopener" aria-label="Follow us on Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://www.tiktok.com/@muvepilates" target="_blank" rel="noopener"
+                    aria-label="Follow us on TikTok">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+
+            </div>
+
+        </section>
 
 
     </main>
@@ -486,7 +479,8 @@
                     <p>info@muvepilates.co.uk</p>
 
                     <div class="social-icons">
-                        <a href="https://www.instagram.com/popular/muve-pilates-studio-ilford/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/popular/muve-pilates-studio-ilford/?hl=en"><i
+                                class="fa-brands fa-instagram"></i></a>
                         <a href="https://www.tiktok.com/@muvepilates"><i class="fa-brands fa-tiktok"></i></a>
                     </div>
                 </div>
