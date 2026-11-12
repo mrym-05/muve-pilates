@@ -51,19 +51,6 @@ html {
     width: 100%;
 }
 
-.hero-container {
-    position: relative;
-}
-
-/* overlay */
-/* .hero-container::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: 1;
-} */
-
 .hero {
     min-height: 85vh;
     background: url("../images/hero-img.webp");
@@ -74,7 +61,7 @@ html {
 
 .hero-content {
     position: absolute;
-    top: 74%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -88,6 +75,14 @@ html {
 }
 
 .hero-tagline {
+    font-family: var(--heading-font);
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--secondary-color);
+    text-transform: capitalize;
+}
+
+.hero-heading {
     font-family: var(--heading-font);
     font-weight: 900;
     font-size: 2rem;
