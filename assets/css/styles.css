@@ -5,7 +5,7 @@
 :root {
     /* COLORS */
 
-    /* greens */
+    /* burgandy */
     --primary-color: #3f1812;
     --primary-color-darker: #2c1009;
     --primary-color-highlight: #532d26;
@@ -14,6 +14,9 @@
     --secondary-color: #ecdbd6;
     --secondary-color-darker: #a58e88;
     --secondary-color-highlight: #f1e9e7;
+
+    /* browns */
+    --tertiary-color: #21140F;
 
     /* FONTS */
     --heading-font: "Cormorant Garamond", Georgia, serif;
@@ -42,7 +45,7 @@ body {
 }
 
 .background-colour {
-    background-color: var(--secondary-color-highlight);
+    background-color: var(--secondary-color);
 }
 
 .heading {
@@ -66,60 +69,45 @@ html {
 
 /* hero */
 .hero {
-    width: 100%;
-}
-
-.hero {
     min-height: 85vh;
-    background: url("../images/hero-img.webp");
+    background:
+        linear-gradient(
+            rgba(0,0,0,.35),
+            rgba(0,0,0,.35)
+        );
+    background-image: url("../images/hero-img.webp");
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .hero-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 300px;
-    max-width: 600px;
-    background-color: rgba(40, 9, 4, 0.8);
-    padding: 0.5rem;
-    border-radius: 20px;
+    background: rgba(33, 20, 15, 0.91);
     backdrop-filter: blur(2px);
+    border-radius: 8px;
+    padding: 2rem;
 }
 
 .hero-tagline {
-    font-family: var(--heading-font);
-    font-weight: 600;
-    font-size: 1rem;
+    letter-spacing: .15rem;
+    text-transform: uppercase;
+    font-size: 10px;
     color: var(--secondary-color);
-    text-transform: capitalize;
 }
 
-.hero-heading {
-    font-family: var(--heading-font);
-    font-weight: 900;
-    font-size: 2rem;
-    color: var(--secondary-color);
+.hero-caption {
     text-transform: uppercase;
+    text-decoration: overline;
+    color: var(--secondary-color);
+    font-weight: 300;
+    font-family: var(--heading-font);
 }
 
 .hero-text {
     color: var(--secondary-color);
-    font-family: var(--heading-font);
-    font-weight: 600;
-}
-
-.hero-btn {
-   color: var(--secondary-color-highlight);
-}
-
-.hero-btn:hover {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: 11px;
 }
 
 /* classes info */
@@ -128,8 +116,9 @@ html {
 }
 
 .card {
-    border-radius: 20px;
+    border-radius: 25px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 3px solid rgba(33, 20, 15, 0.91);
 }
 
 .card:hover {
@@ -161,7 +150,12 @@ html {
     font-weight: 600;
 }
 
-.accordion-button{
+.accordion-button {
     background-color: var(--primary-color-highlight);
-    color: var(--secondary-color);
+    color: white;
+}
+
+.accordion-collapse {
+    color: var(--primary-color-highlight) !important;
+    background-color: var(--secondary-color-darker);
 }

@@ -28,8 +28,8 @@
         <!-- bootstrap navbar -->
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
             <div class="container navbar-container">
-                <a class="navbar-brand" href="index.html"><img src="assets/images/muve-logo.webp" alt="Muve logo" width="120" height="50"
-                        class="d-inline-block align-text-top"></a>
+                <a class="navbar-brand" href="index.html"><img src="assets/images/muve-logo.webp" alt="Muve logo"
+                        width="120" height="50" class="d-inline-block align-text-top"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -70,26 +70,46 @@
 
     <section class="container hero">
 
-        <div class="hero-content">
-            <p class="hero-tagline">müve better, müve stronger, müve you.</p>
-            <h1 class="hero-heading">Müve | <span>Pilates Studio</span> </h1>
-            <br>
-            <p class="hero-text">
-                Discover reformer Pilates classes designed to build strength,
-                improve mobility, and help you feel your best in a welcoming studio.
-            </p>
+        <div class="row min-vh-100 align-items-center">
 
-            <a href="schedule.html" class="btn hero-btn btn-outline-light me-2">
-                Book a Class
-            </a>
+            <div class="col-12 col-md-8 col-lg-6">
 
-            <a href="packages.html" class="btn hero-btn btn-outline-light">
-                View Packages
-            </a>
+                <div class="hero-content text-center text-md-start">
 
-            <a href="#classes" class="btn hero-btn btn-outline-light mt-3">
-                Find your perfect class <i class="fa-solid fa-arrow-turn-down"></i>
-            </a>
+                    <p class="hero-tagline">
+                        müve better, müve stronger, müve you.
+                    </p>
+
+                    <h1 class="hero-heading">
+                        <img src="assets/images/muve-hero-logo.webp" alt="Müve logo">
+                    </h1>
+                    <h3 class="hero-caption">Pilates studio</h3>
+
+                    <p class="lead hero-text mb-4">
+                        Discover reformer Pilates classes designed to build
+                        strength, improve mobility, and help you feel your best.
+                    </p>
+
+                    <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-md-start">
+
+                        <a href="schedule.html" class="btn btn-outline-light">
+                            Book a Class
+                        </a>
+
+                        <a href="packages.html" class="btn btn-outline-light">
+                            View Packages
+                        </a>
+
+                    </div>
+
+                    <a href="#classes" class="d-inline-block mt-3 text-white text-decoration-none">
+                        Find your perfect class ↓
+                    </a>
+
+                </div>
+
+            </div>
+
         </div>
 
     </section>
@@ -147,7 +167,7 @@
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="card h-100">
                     <div class="card-body class-card-body text-center">
-                        <h3 class="h5 class-name">Stength</h3>
+                        <h3 class="h5 class-name">Strength</h3>
                         <p class="class-description">
                             A reformer-based class that blends traditional Pilates with resistance training.
                             Build strength, endurance, and stability through challenging full-body workouts.
@@ -156,19 +176,20 @@
                 </div>
             </div>
 
+
         </section>
 
         <section class="row g-3 mt-3">
 
-            <div class="col-12 col-md-6 col-lg-3"></div>
+            <div class="col-12">
 
-            <h3 class="text-center mb-3 heading">Not Sure Where to Start?</h3>
+                <h3 class="text-center mb-3 heading">Not Sure Where to Start?</h3>
 
-            <p class="text-center mb-4 levels-text">
-                All of our classes are suitable for every experience level, from complete beginners
-                to experienced Pilates enthusiasts. Explore each class below to find the right fit
-                for your goals.
-            </p>
+                <p class="text-center mb-4 levels-text">
+                    All of our classes are suitable for every experience level, from complete beginners
+                    to experienced Pilates enthusiasts. Explore each class below to find the right fit
+                    for your goals.
+                </p>
 
             </div>
 
@@ -178,12 +199,12 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#reformer">
+                                data-bs-target="#beginner">
                                 Beginner
                             </button>
                         </h2>
 
-                        <div id="reformer" class="accordion-collapse collapse" data-bs-parent="#classAccordion">
+                        <div id="beginner" class="accordion-collapse collapse" data-bs-parent="#classAccordion">
                             <div class="accordion-body">
                                 New to Pilates? Beginner classes focus on learning the fundamentals, building
                                 confidence, and developing proper technique in a supportive environment.
@@ -199,12 +220,12 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#jumpboard">
+                                data-bs-target="#intermediate">
                                 Intermediate
                             </button>
                         </h2>
 
-                        <div id="jumpboard" class="accordion-collapse collapse" data-bs-parent="#classAccordion">
+                        <div id="intermediate" class="accordion-collapse collapse" data-bs-parent="#classAccordion">
                             <div class="accordion-body">
                                 Suitable for those with previous Pilates experience who are confident with the
                                 basics. Expect more challenging exercises, increased intensity, and
@@ -216,12 +237,12 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#jumpboard">
+                                data-bs-target="#all-levels">
                                 All-Levels
                             </button>
                         </h2>
 
-                        <div id="jumpboard" class="accordion-collapse collapse" data-bs-parent="#classAccordion">
+                        <div id="all-levels" class="accordion-collapse collapse" data-bs-parent="#classAccordion">
                             <div class="accordion-body">
                                 Open to everyone, regardless of experience. Exercises can be adapted to suit
                                 your individual ability, allowing both beginners and experienced participants to
@@ -369,7 +390,6 @@
                 </a>
             </div>
 
-            </div>
         </section>
 
         <!-- stats banner -->
