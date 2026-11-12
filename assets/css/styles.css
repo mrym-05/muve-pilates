@@ -36,6 +36,10 @@ body {
     height: 100%;
 }
 
+.container {
+    max-width: 4000px;
+}
+
 /* internal link scrolling */
 html {
     scroll-behavior: smooth;
@@ -67,8 +71,7 @@ html {
     text-align: center;
     width: 300px;
     max-width: 600px;
-    z-index: 2;
-    background-color: rgba(58, 22, 12, 0.8);
+    background-color: rgba(40, 9, 4, 0.8);
     padding: 0.5rem;
     border-radius: 20px;
     backdrop-filter: blur(2px);
@@ -117,6 +120,17 @@ html {
 }
 
 /* classes info */
-#classes {
+.classes {
     background-color: var(--secondary-color);
+}
+
+.class-heading {
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 3rem !important;
+    background-color: var(--primary-color-highlight);
+    border-radius: 5px;
+    padding: 16px;
 }
