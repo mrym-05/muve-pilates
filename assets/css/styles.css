@@ -77,15 +77,21 @@ html {
 
 /* hero */
 .hero {
-    max-height: 92vh;
-    background:
-        linear-gradient(rgba(0, 0, 0, .35),
-            rgba(0, 0, 0, .35));
+    min-height: 88svh;
     background-image: url("../images/hero-img.webp");
-
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    /* account for fixed navbar */
+    padding: 90px 0 24px;
+    display: grid;
+    place-items: center;
+}
+
+.hero .row {
+    width: 100%;
+    min-height: 0;
 }
 
 .hero-content {
@@ -93,6 +99,8 @@ html {
     backdrop-filter: blur(2px);
     border-radius: 8px;
     padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .hero-tagline {
@@ -363,7 +371,7 @@ html {
 #stats h2 {
     font-size: 3rem;
     max-width: 100%;
-} 
+}
 
 #stats p {
     text-transform: uppercase;
