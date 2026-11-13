@@ -180,6 +180,11 @@ html {
     text-transform: uppercase;
 }
 
+.schedule-btn:hover {
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+}
+
 /* levels */
 #levels {
     border: 10px solid var(--primary-color);
