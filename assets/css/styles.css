@@ -390,10 +390,8 @@ html {
 }
 
 .instructions {
-    padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     color: var(--secondary-color);
-    border: 3px solid var(--tertiary-color-warmer);
 }
 
 .instructions .h5 {
@@ -428,3 +426,47 @@ html {
     background-color: var(--primary-color-darker);
 }
 
+.footer-heading {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+}
+
+.footer-text {
+    font-family: var(--heading-font);
+    color: var(--secondary-color-darker);
+}
+
+.footer hr {
+    color: var(--secondary-color-darker);
+}
+
+.footer-link-heading, 
+.footer-contact {
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.footer-link-list > a {
+    color: var(--secondary-color-darker);
+    text-decoration: none;
+}
+
+.footer-contact-info {
+    color: var(--secondary-color-darker);
+}
+
+.social-icons a {
+    color: var(--secondary-color);
+    font-size: 1rem;
+}
+
+.copyright {
+    color: var(--secondary-color);
+}
+
+.terms a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
