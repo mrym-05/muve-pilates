@@ -173,6 +173,13 @@ html {
     font-size: 14px;
 }
 
+.schedule-btn {
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+}
+
 /* levels */
 #levels {
     border: 10px solid var(--primary-color);
