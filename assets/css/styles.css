@@ -138,18 +138,18 @@ html {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
-.class-card-body {
+.home-card-body {
     color: var(--primary-color);
     background-color: white;
 }
 
-.class-name {
+.card-name {
     font-family: var(--heading-font);
     font-weight: 700;
     font-size: 1.8rem;
 }
 
-.class-description {
+.card-description {
     text-transform: uppercase;
     font-size: 14px;
 }
@@ -165,7 +165,7 @@ html {
     color: var(--secondary-color);
 }
 
-.levels-background {
+.arched-background {
     background-color: rgba(0, 0, 0, .45);
     padding: 5px;
     border-radius: 50px 50px 0 0;
@@ -318,6 +318,21 @@ html {
     margin: 20px 0 0;
 }
 
+/* why choose us */
+#why-us {
+    background-color: var(--tertiary-color-highlight);
+    padding: 20px 0 60px;
+    border: 10px solid var(--tertiary-color);
+}
+
+#why-us .heading {
+    padding-top: 30px;
+    color: var(--primary-color-highlight);
+}
+
+#why-us .arched-background {
+    background-color: rgba(255, 241, 233, 0.801);
+}
 
 /* footer */
 .footer {
