@@ -11,12 +11,13 @@
     --primary-color-highlight: #532d26;
 
     /* light neutrals */
-    --secondary-color: #ecdbd6;
+    --secondary-color: #FAF5EE;
     --secondary-color-darker: #a58e88;
     --secondary-color-highlight: #f1e9e7;
 
     /* browns */
     --tertiary-color: #21140F;
+    --tertiary-color-highlight: #281B14;
 
     /* FONTS */
     --heading-font: "Cormorant Garamond", Georgia, serif;
@@ -51,14 +52,16 @@ body {
 .heading {
     color: var(--primary-color-highlight);
     font-family: var(--heading-font);
-    font-size: 2.1rem;
+    font-size: 2.5rem;
     font-weight: 800;
-    margin-top: 3rem !important;
+    margin-top: 1.2rem !important;
     text-transform: capitalize;
 }
 
-* {
-    outline: 1px solid green;
+.sub-heading {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: var(--primary-color-highlight);
 }
 
 /* internal link scrolling */
@@ -73,7 +76,7 @@ html {
 
 /* hero */
 .hero {
-    max-height: 90vh;
+    max-height: 92vh;
     background:
         linear-gradient(rgba(0, 0, 0, .35),
             rgba(0, 0, 0, .35));
@@ -89,8 +92,6 @@ html {
     backdrop-filter: blur(2px);
     border-radius: 8px;
     padding: 2rem;
-    /* for bigger screens 
-    margin-left: 2rem; */
 }
 
 .hero-tagline {
@@ -117,23 +118,24 @@ html {
 /* classes info */
 #classes {
     scroll-margin-top: 64px;
+    background-color: var(--secondary-color);
+    padding-bottom: 50px;
 }
 
 .card {
-    border-radius: 25px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 3px solid rgba(33, 20, 15, 0.91);
+    border: 1px solid var(--primary-color);
+    border-radius: 0px;
 }
 
 .card:hover {
     transform: scale(1.03);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 .class-card-body {
-    color: var(--secondary-color);
-    background-color: var(--primary-color);
-    border-radius: 20px;
+    color: var(--primary-color);
+    background-color: white;
 }
 
 .class-name {
@@ -148,21 +150,36 @@ html {
 }
 
 /* levels */
+#levels {
+    background-color: var(--primary-color-highlight);
+}
+
+.levels-heading {
+    color: var(--secondary-color);
+}
+
 .levels-text {
-    color: #2c1009;
+    color: var(--secondary-color-highlight);
     font-family: var(--heading-font);
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 14px;
+    text-transform: uppercase;
 }
 
 .accordion-button {
-    background-color: var(--primary-color-highlight);
-    color: white;
+    background-color: white;
+    color: var(--tertiary-color-highlight);
+    text-transform: uppercase;
 }
 
 .accordion-collapse {
-    color: var(--primary-color-highlight) !important;
-    background-color: var(--secondary-color-darker);
+    color: var(--tertiary-color) !important;
+    background-color: var(--secondary-color);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #ffffff;
+    color: var(--tertiary-color);
 }
 
 /* newcomer info */
