@@ -517,3 +517,38 @@ html {
     color: var(--secondary-color);
     text-decoration: none;
 }
+
+/* STUDIO */
+.hero {
+    min-height: 58svh;
+    background-image: url("../images/about-hero.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* account for fixed navbar */
+    padding: 90px 0 24px;
+    display: grid;
+    place-items: center;
+}
+
+.hero .row {
+    width: 100%;
+    min-height: 0;
+}
+
+.about-hero-heading {
+    color: var(--secondary-color-highlight);
+}
+
+.about-hero-content hr {
+    color: var(--secondary-color);
+}
+
+.about-hero-caption {
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    font-weight: 300;
+    font-family: var(--heading-font);
+    font-size: 1rem;
+}
