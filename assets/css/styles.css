@@ -439,6 +439,10 @@ html {
     font-size: 1.6rem;
 }
 
+.social-links a:hover {
+     color: var(--secondary-color-darker);
+}
+
 /* footer */
 .footer {
     background-color: var(--primary-color-darker);
@@ -471,13 +475,33 @@ html {
     text-decoration: none;
 }
 
+.footer-link-list > a:hover {
+    color: var(--secondary-color);
+}
+
 .footer-contact-info {
     color: var(--secondary-color-darker);
 }
 
-.social-icons a {
+.contact > a {
+    text-decoration: none;
+}
+
+.contact > a:hover {
     color: var(--secondary-color);
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: var(--secondary-color-darker);
     font-size: 1rem;
+}
+
+.social-icons a:hover {
+    color: var(--secondary-color);
 }
 
 .copyright {
