@@ -122,9 +122,10 @@ html {
 
 /* classes info */
 #classes {
-    scroll-margin-top: 64px;
+    scroll-margin-top: 79px;
     background-color: var(--secondary-color);
     padding-bottom: 50px;
+    border: 10px solid var(--secondary-color-darker);
 }
 
 .card {
@@ -156,7 +157,9 @@ html {
 
 /* levels */
 #levels {
+    border: 10px solid var(--primary-color);
     background-color: var(--primary-color-highlight);
+    padding: 55px 0 20px;
 }
 
 .levels-heading {
@@ -221,7 +224,8 @@ html {
 /* newcomer info */
 #intro-offer {
     background-color: var(--tertiary-color-highlight);
-    padding-bottom: 50px;
+    padding: 20px 0 60px;
+    border: 10px solid var(--tertiary-color);
 }
 
 #intro-offer .heading,
@@ -255,6 +259,8 @@ html {
 /* gallery */
 #gallery {
     background-color: var(--secondary-color);
+    padding: 20px 0 60px;
+    border: 10px solid var(--secondary-color-darker);
 }
 
 .studio-gallery img {
