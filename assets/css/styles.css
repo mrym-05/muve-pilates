@@ -75,6 +75,17 @@ html {
     background-color: var(--primary-color-darker);
 }
 
+#book-btn {
+    background-color: var(--primary-color-highlight);
+    color: var(--secondary-color);
+    outline: 2px solid var(--tertiary-color);
+}
+
+#book-btn:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
 /* hero */
 .hero {
     min-height: 88svh;
