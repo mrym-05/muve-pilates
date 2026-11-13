@@ -116,6 +116,10 @@ html {
     font-size: 11px;
 }
 
+.hero-btn:hover {
+    background-color: var(--secondary-color-darker);
+}
+
 /* classes info */
 #classes {
     scroll-margin-top: 64px;
@@ -174,6 +178,10 @@ html {
     text-transform: uppercase;
 }
 
+#levels hr {
+    color: var(--secondary-color);
+}
+
 .accordion-item,
 .accordion-body,
 .accordion-button {
@@ -211,17 +219,36 @@ html {
 }
 
 /* newcomer info */
+#intro-offer {
+    background-color: var(--tertiary-color-highlight);
+    padding-bottom: 50px;
+}
+
+#intro-offer .heading,
+#intro-offer hr {
+    color: var(--secondary-color-highlight);
+}
+
 .offer-price {
     text-transform: uppercase;
     font-size: 14px;
-    color: var(--primary-color-highlight);
+    color: var(--secondary-color-darker);
 }
 
 .offer-info {
-    color: #2c1009;
+    color: var(--secondary-color);
     font-family: var(--heading-font);
     font-weight: 600;
     font-size: 1.2rem;
+}
+
+.claim-offer-btn {
+    background-color: var(--secondary-color-darker);
+    border-radius: 0px;
+    color: var(--secondary-color-highlight);
+    padding: 5px 10px;
+    outline: 4px solid var(--tertiary-color);
+    text-transform: uppercase;
 }
 
 /* footer */
