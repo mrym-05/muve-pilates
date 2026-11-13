@@ -129,7 +129,6 @@ html {
 }
 
 .card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid var(--primary-color);
     border-radius: 0px;
 }
@@ -253,12 +252,14 @@ html {
     padding: 5px 10px;
     outline: 4px solid var(--tertiary-color);
     text-transform: uppercase;
-    margin-top: 0.8rem
+    margin-top: 0.8rem;
 }
 
 .claim-offer-btn:hover {
     background-color: var(--secondary-color);
     color: var(--tertiary-color-warmer);
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 /* gallery */
