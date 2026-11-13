@@ -390,9 +390,7 @@ html {
 }
 
 .instructions {
-    background-color: var(--primary-color-darker);
-    border-radius: 20px;
-    padding-top: 10px;
+    padding: 10px;
     margin-bottom: 10px;
     color: var(--secondary-color);
     border: 3px solid var(--tertiary-color-warmer);
