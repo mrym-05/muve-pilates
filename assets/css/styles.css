@@ -315,15 +315,45 @@ html {
 }
 
 .rating-text-uppercase {
-    color: var(--secondary-color);
+    color: var(--secondary-color-darker);
     text-transform: uppercase;
     font-size: 13px;
+}
+
+.review-content {
+    background-color: var(--secondary-color-highlight);
+    border-radius: 20px;
+    padding: 10px;
+    border: 2px solid var(--primary-color-darker);
+}
+
+.review-text {
+    min-height: 100px;
+    margin-top: 20px;
+    margin-bottom: 0;
 }
 
 .review-nav {
     display: flex;
 }
 
+.stars {
+    color: rgb(228, 191, 143);
+    font-size: 12px;
+}
+
+.review-text,
+.review-author {
+    color: var(--tertiary-color-warmer);
+}
+
+/* getting rid of bootstrap styling */
+.review-btn {
+    background: none;
+    border: none;
+    color: #f6f2ee;
+    font-size: 1.5rem;
+}
 
 /* why choose us */
 #why-us {
