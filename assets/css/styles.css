@@ -703,9 +703,28 @@ html {
     color: var(--secondary-color);
 }
 
+.info-card {
+    background-color: var(--primary-color-darker);
+    min-height: 255px;
+    border-radius: 25px;
+    border: 2px solid var(--secondary-color-darker);
+}
+
+.info-card h3 {
+    margin-bottom: 12px;
+    font-size: 1.6rem;
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+}
+
 .google-map {
     display: flex;
     justify-content: center;
+    max-width: 95%;
+}
+
+.google-map iframe {
+    border-radius: 45px 45px 0 0;
 }
 
 /* media queries */
