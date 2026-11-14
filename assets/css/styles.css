@@ -524,7 +524,7 @@ html {
 .about-hero-content {
     backdrop-filter: blur(12px);
     border-radius: 8px;
-    border: 2px solid var(--tertiary-color);
+    border: 2px solid rgb(31, 4, 4);
     padding: 2rem;
     max-width: 600px;
     margin: 0 auto;
