@@ -534,7 +534,7 @@ html {
 
 /* STUDIO */
 .about-hero-img {
-    min-height: 58svh;
+    min-height: 85svh;
     background-image: url("../images/about-hero.webp");
     background-size: cover;
     background-position: center;
@@ -639,9 +639,10 @@ html {
     object-fit: cover;
 }
 
+/* class types */
 #class-types {
-    background-color: var(--tertiary-color-highlight);
-    border: 10px solid var(--tertiary-color);
+    background-color: var(--secondary-color-darker);
+    border: 10px solid var(--tertiary-color-warmer);
 }
 
 #class-types h2, 
@@ -660,4 +661,10 @@ html {
 
 .card-description a:hover {
     color: var(--tertiary-color);
+}
+
+/* visit section */
+.google-map {
+    display: flex;
+    justify-content: center;
 }
