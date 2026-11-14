@@ -309,18 +309,6 @@ html {
     color: var(--secondary-color);
 }
 
-#reviews h3 {
-    color: #be965a;
-    font-size: 1.5rem;
-    padding-top: 1rem;
-}
-
-#reviews h3 i {
-    outline: solid 2px var(--primary-color-darker);
-    background-color: var(--secondary-color);
-    padding: 3px;
-}
-
 .rating-text {
     color: var(--secondary-color);
     font-weight: 500;
@@ -330,8 +318,12 @@ html {
     color: var(--secondary-color);
     text-transform: uppercase;
     font-size: 13px;
-    margin: 20px 0 0;
 }
+
+.review-nav {
+    display: flex;
+}
+
 
 /* why choose us */
 #why-us {
