@@ -663,8 +663,40 @@ html {
     color: var(--tertiary-color);
 }
 
+/* app */
+#app {
+    background-color: var(--secondary-color-highlight);
+    border: 10px solid var(--secondary-color-darker);
+}
+
+.app-store-container {
+    display: flex;
+    justify-content: center;
+}
+
+#app .card-description {
+    color: #3f1812;
+    font-family: var(--heading-font);
+    text-transform: none;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.phone-mockup-img img {
+    max-width: 100%;
+    max-width: 280px;
+    height: auto;
+}
+
 /* visit section */
 .google-map {
     display: flex;
     justify-content: center;
+}
+
+/* media queries */
+@media screen and (min-width: 992px) {
+    .app-text {
+        padding-left: 150px;
+    }
 }
