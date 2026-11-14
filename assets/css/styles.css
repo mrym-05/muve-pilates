@@ -325,12 +325,20 @@ html {
     border-radius: 20px;
     padding: 10px;
     border: 2px solid var(--primary-color-darker);
+    width: 85%;
+    margin: 0 auto !important;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
 }
 
 .review-text {
-    min-height: 100px;
-    margin-top: 20px;
+    margin-top: 5px;
     margin-bottom: 0;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
 }
 
 .review-nav {
