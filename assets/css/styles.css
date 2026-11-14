@@ -623,6 +623,7 @@ html {
     color: var(--secondary-color-highlight);
     font-weight: 600;
     font-family: var(--heading-font);
+    padding: 20px;
 }
 
 .our-story-img {
@@ -638,8 +639,25 @@ html {
     object-fit: cover;
 }
 
-@media (min-width: 1200px) {
-    .story-img img{
-        aspect-ratio: 16 / 9;
-    }
+#class-types {
+    background-color: var(--tertiary-color-highlight);
+    border: 10px solid var(--tertiary-color);
+}
+
+#class-types h2, 
+.class-type-sub-heading {
+    color: var(--secondary-color);
+}
+
+.class-type-sub-heading {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.card-description a {
+    color: var(--primary-color-highlight);
+}
+
+.card-description a:hover {
+    color: var(--tertiary-color);
 }
