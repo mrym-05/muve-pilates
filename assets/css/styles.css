@@ -611,6 +611,7 @@ html {
     padding: 10px 0;
     background-color: #532d26;
     border: 10px solid var(--primary-color-darker);
+    scroll-margin-top: 10px;
 }
 
 #story .heading, 
