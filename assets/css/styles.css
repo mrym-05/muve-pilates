@@ -717,6 +717,10 @@ html {
     color: var(--secondary-color);
 }
 
+.info-card i {
+    color: var(--secondary-color-darker);
+}
+
 .google-map {
     display: flex;
     justify-content: center;
