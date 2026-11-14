@@ -643,6 +643,7 @@ html {
 #class-types {
     background-color: var(--secondary-color-darker);
     border: 10px solid var(--tertiary-color-warmer);
+    scroll-margin-top: 60px;
 }
 
 #class-types h2, 
@@ -667,6 +668,7 @@ html {
 #app {
     background-color: var(--secondary-color-highlight);
     border: 10px solid var(--secondary-color-darker);
+    scroll-margin-top: 60px;
 }
 
 .app-store-container {
@@ -689,6 +691,18 @@ html {
 }
 
 /* visit section */
+#visit {
+    scroll-margin-top: 60px;
+    background-color: var(--primary-color-highlight);
+    padding: 50px 0;
+    border: 10px solid var(--primary-color-darker);
+}
+
+#visit h2,
+#visit p {
+    color: var(--secondary-color);
+}
+
 .google-map {
     display: flex;
     justify-content: center;
