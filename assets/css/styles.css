@@ -730,6 +730,32 @@ html {
     max-width: 95%;
 }
 
+/* newsletter */
+#newsletter {
+    background-color: var(--secondary-color);
+    border: 10px solid var(--secondary-color-darker);
+}
+
+.newsletter-card .card-description {
+    color: var(--primary-color-highlight);
+}
+
+.newsletter-btn {
+    background-color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--secondary-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 2px solid var(--tertiary-color);
+}
+
+.newsletter-btn:hover {
+    background-color: var(--secondary-color-darker);
+    color: var(--tertiary-color);
+    border: 2px solid var(--tertiary-color);
+}
+
 /* media queries */
 @media screen and (min-width: 992px) {
     .app-text {
