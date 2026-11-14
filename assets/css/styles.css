@@ -605,3 +605,40 @@ html {
 .page-links a:hover {
     color: var(--secondary-color-darker);
 }
+
+/* about us */
+#story {
+    padding: 10px 0;
+    background-color: #532d26;
+    border: 10px solid var(--primary-color-darker);
+}
+
+#story .heading, 
+#story hr {
+    color: var(--secondary-color);
+}
+
+#story p {
+    color: var(--secondary-color-highlight);
+    font-weight: 600;
+    font-family: var(--heading-font);
+}
+
+.our-story-img {
+    margin: 0 auto;
+}
+
+.our-story-img img{
+    max-width: 75%;
+    max-height: 400px;
+    border-radius: 60px 60px 0 0;
+    border: 2px solid var(--primary-color-darker);
+    aspect-ratio: 4/5;
+    object-fit: cover;
+}
+
+@media (min-width: 1200px) {
+    .story-img img{
+        aspect-ratio: 16 / 9;
+    }
+}
