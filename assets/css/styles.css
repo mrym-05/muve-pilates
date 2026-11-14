@@ -588,3 +588,20 @@ html {
 .about-hero-content hr {
     color: var(--secondary-color);
 }
+
+/* internal links styling */
+#internal-links {
+    padding: 20px 0;
+    background-color: var(--secondary-color-highlight);
+}
+
+.page-links a {
+    text-decoration: none;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.page-links a:hover {
+    color: var(--secondary-color-darker);
+}
