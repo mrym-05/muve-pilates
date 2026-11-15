@@ -90,24 +90,24 @@
 
     </section>
 
+    <!-- main -->
     <main class="mt-0 flex-grow-1">
 
-        <!-- calendar section -->
-        <section id="schedule-calendar" class="container">
-
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h2 class="heading">December 2026</h2>
-                </div>
-            </div>
+        <section id="booking-section" class="container">
 
             <div class="row">
 
-                <div class="mb-3 col-12 col-md-8 col-lg-5 mx-auto">
+                <!-- LEFT COLUMN -->
 
-                    <!-- CALENDAR GOES HERE -->
+                <div class="col-12 col-md-5">
+
+                    <h2 class="heading text-center">
+                        December 2026
+                    </h2>
 
 
+
+                    <!-- CALENDAR -->
                     <div class="card calendar-card align-items-center mx-auto">
                         <div class="card-body">
 
@@ -213,40 +213,36 @@
                         </div>
                     </div>
 
-
-
                 </div>
 
-            </div>
 
-        </section>
 
-        <!-- selected date heading -->
-        <section id="selected-date" class="container">
+                <!-- RIGHT COLUMN -->
 
-            <div class="row text-center">
+                <div class="col-12 col-md-7">
 
-                <div id="selected-date-id" class="col-12 selected-date-heading">
-                    <h3>Select a date to view available classes</h3>
-                </div>
+                    <!-- SELECTED DATE -->
 
-                <div id="schedule-content">
-                    <p>Choose a date from the calendar above to see
-                        available classes and booking information.</p>
-                </div>
+                    <div id="selected-date" class="selected-date-heading text-center">
 
-            </div>
+                        <h3>
+                            Select a date to view available classes
+                        </h3>
 
-        </section>
+                    </div>
 
-        <!-- schedule table section -->
-        <section id="schedule-results" class="container">
+                    <!-- INTRO MESSAGE -->
 
-            <div class="row">
+                    <div id="schedule-content">
 
-                <div class="col-12 col-md-6 mx-auto">
+                        <p>
+                            Choose a date from the calendar above to see
+                            available classes and booking information.
+                        </p>
 
-                    <!-- available dates -->
+                    </div>
+
+                    <!-- AVAILABLE DATES -->
 
                     <div id="available-classes" class="mx-2">
 
@@ -292,101 +288,29 @@
 
                     </div>
 
-                    <!-- fully booked -->
+                    <!-- FULLY BOOKED -->
+
                     <div id="fully-booked">
 
                         <h3>date placeholder</h3>
-                        <p>Unfortunately all classes for this date have been fully booked.</p>
+
+                        <p>
+                            Unfortunately all classes for this date have been fully booked.
+                        </p>
 
                     </div>
 
+                    <!-- UNAVAILABLE -->
 
-                    <!-- unavailable -->
                     <div id="unavailable-dates">
 
                         <h3>date placeholder</h3>
-                        <p>Class schedules for this date have not yet been released.</p>
+
+                        <p>
+                            Class schedules for this date have not yet been released.
+                        </p>
 
                     </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- booking modal -->
-        <div class="modal fade" id="booking-modal">
-
-            <div class="modal-dialog">
-
-                <div class="modal-content">
-
-                    <div class="modal-header">
-                        <h2 class="modal-title">
-                            Book Your Class
-                        </h2>
-
-                        <button class="btn-close" data-bs-dismiss="modal">
-                        </button>
-                    </div>
-
-                    <div class="modal-body">
-
-                        <form>
-
-                            <div class="mb-3">
-                                <label>Name</label>
-                                <input type="text" class="form-control">
-                            </div>
-
-                            <div class="mb-3">
-                                <label>Email</label>
-                                <input type="email" class="form-control">
-                            </div>
-
-                            <div class="mb-3">
-                                <label>Phone Number</label>
-                                <input type="tel" class="form-control">
-                            </div>
-
-                            <button type="submit" class="btn btn-primary">
-
-                                Confirm Booking
-
-                            </button>
-
-                        </form>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- not ready to book section -->
-        <section id="schedule-cta" class="container">
-
-            <div class="row">
-
-                <div class="col-12 text-center">
-
-                    <h2>Not Ready To Book Yet?</h2>
-
-                    <p>
-                        Explore our membership options or
-                        get in touch with our friendly team.
-                    </p>
-
-                    <a href="packages.html" class="btn btn-primary">
-                        View Packages
-                    </a>
-
-                    <a href="contact.html" class="btn btn-outline-primary">
-                        Get In Touch
-                    </a>
 
                 </div>
 

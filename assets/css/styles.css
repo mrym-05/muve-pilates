@@ -815,7 +815,7 @@ html {
 }
 
 /* calendar */
-#schedule-calendar {
+#booking-section {
     background-color: var(--secondary-color-highlight);
     border-top: 10px solid var(--primary-color);
 }
@@ -846,7 +846,7 @@ html {
 }
 
 
-#available-classes,
+/* #available-classes, */
 #fully-booked,
 #unavailable-dates {
     display: none;
