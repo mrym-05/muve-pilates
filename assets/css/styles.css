@@ -832,8 +832,11 @@ html {
 }
 
 .calendar-day {
-    height: 30px;
-    width: 30px;
+    height: 38px;
+    width: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
     border: none;
     background-color: var(--primary-color-highlight);
