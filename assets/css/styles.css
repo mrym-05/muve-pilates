@@ -802,6 +802,18 @@ html {
     align-items: center;
 }
 
+.schedule-hero-heading {
+    color: var(--secondary-color);
+}
+
+.schedule-hero-caption {
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-family: var(--heading-font);
+    font-size: 1rem;
+    text-decoration: overline;
+}
+
 /* media queries */
 @media screen and (min-width: 992px) {
     .app-text {

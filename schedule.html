@@ -78,9 +78,9 @@
                     <h1 class="schedule-hero-heading heading">
                         class schedule
                     </h1>
-                    <h4 class="schedule-hero-caption">Browse our upcoming classes and book your place
-                        in just a few clicks.
-                        </h4>
+
+                    <h4 class="schedule-hero-caption">Browse our upcoming classes
+                    </h4>
 
                 </div>
 
@@ -97,7 +97,7 @@
 
             <div class="row">
                 <div class="col-12 text-center">
-                    <h2>Select a Date</h2>
+                    <h2 class="heading">December 2026</h2>
                 </div>
             </div>
 
@@ -106,6 +106,71 @@
                 <div class="col-12">
 
                     <!-- CALENDAR GOES HERE -->
+                    <table class="table table-bordered table-sm">
+                        <thead>
+
+                            <tr>
+                                <th scope="col">Mon</th>
+                                <th scope="col">Tue</th>
+                                <th scope="col">Wed</th>
+                                <th scope="col">Thu</th>
+                                <th scope="col">Fri</th>
+                                <th scope="col">Sat</th>
+                                <th scope="col">Sun</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td><button disabled>30</button></td>
+                                <td><button class="calendar-day available" data-date="2026-12-01">1</button></td>
+                                <td><button class="calendar-day fully-booked" data-date="2026-12-02">2</button></td>
+                                <td><button class="calendar-day available" data-date="2026-12-03">3</button></td>
+                                <td><button class="calendar-day available" data-date="2026-12-04">4</button></td>
+                                <td><button class="calendar-day unavailable" data-date="2026-12-05">5</button></td>
+                                <td><button class="calendar-day unavailable" data-date="2026-12-06">6</button></td>
+                            </tr>
+                            <tr>
+                                <td><button class="calendar-day fully-booked" data-date="2026-12-07">7</button></td>
+                                <td><button class="calendar-day available" data-date="2026-12-08">8</button></td>
+                                <td><button class="calendar-day fully-booked" data-date="2026-12-09">9</button></td>
+                                <td><button class="calendar-day fully-booked" data-date="2026-12-10">10</button></td>
+                                <td><button class="calendar-day fully-booked" data-date="2026-12-11">11</button></td>
+                                <td><button class="calendar-day available" data-date="2026-12-12">12</button></td>
+                                <td><button class="calendar-day available" data-date="2026-12-13">13</button></td>
+                            </tr>
+                            <tr>
+                                <td><button class="calendar-day available" data-date="2026-12-14">14</button></td>
+                                <td><button class="calendar-day fully-booked" data-date="2026-12-15">15</button></td>
+                                <td><button class="calendar-day available" data-date="2026-12-16">16</button></td>
+                                <td><button class="calendar-day available" data-date="2026-12-17">17</button></td>
+                                <td><button class="calendar-day available" data-date="2026-12-18">18</button></td>
+                                <td><button class="calendar-day unavailable" data-date="2026-12-19">19</button></td>
+                                <td><button class="calendar-day unavailable" data-date="2026-12-20">20</button></td>
+                            </tr>
+                            <tr>
+                                <td><button class="calendar-day fully-booked" data-date="2026-12-21">21</button></td>
+                                <td><button class="calendar-day available" data-date="2026-12-22">22</button></td>
+                                <td><button class="calendar-day unavailable" data-date="2026-12-23">23</button></td>
+                                <td><button class="calendar-day unavailable" data-date="2026-12-24">24</button></td>
+                                <td><button class="calendar-day unavailable" data-date="2026-12-25">25</button></td>
+                                <td><button class="calendar-day available" data-date="2026-12-26">26</button></td>
+                                <td><button class="calendar-day available" data-date="2026-12-27">27</button></td>
+                            </tr>
+                            <tr>
+                                <td><button class="calendar-day available" data-date="2026-12-28">28</button></td>
+                                <td><button class="calendar-day fully-booked" data-date="2026-12-29">29</button></td>
+                                <td><button class="calendar-day available" data-date="2026-12-30">30</button></td>
+                                <td><button class="calendar-day fully-booked" data-date="2026-12-31">31</button></td>
+                                <td><button disabled>1</button></td>
+                                <td><button disabled>2</button></td>
+                                <td><button disabled>3</button></td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
 
                 </div>
 
@@ -118,8 +183,13 @@
 
             <div class="row">
 
-                <div class="col-12">
-                    <h2>Classes for 16 November 2026</h2>
+                <div class="col-12 selected-date-heading">
+                    <h3>Select a date to view available classes</h3>
+                </div>
+
+                <div id="schedule-content">
+                    <p>Choose a date from the calendar above to see
+                        available classes and booking information.</p>
                 </div>
 
             </div>
@@ -135,27 +205,31 @@
 
                     <!-- CLASS CARD -->
 
-                    <div class="class-card">
+                    <div class="available-classes">
 
-                        <div class="class-time">
-                            <p>9:00 AM • 50 min</p>
-                        </div>
+                        <table class="table">
 
-                        <div class="class-info">
-                            <h3>Beginner Pilates</h3>
-                            <p>Instructor Name</p>
-                        </div>
+                            <thead>
+                                <tr>
+                                    <th>Time</th>
+                                    <th>Class</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
 
-                        <div class="class-booking">
-                            <p>£18</p>
+                            <tbody>
+                                <tr>
+                                    <td>09:00</td>
+                                    <td>Beginner Pilates</td>
+                                    <td>
+                                        <button>
+                                            Book Now
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
 
-                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal">
-
-                                Book Now
-
-                            </button>
-
-                        </div>
+                        </table>
 
                     </div>
 
