@@ -49,6 +49,20 @@
     color: var(--primary-color-highlight);
 }
 
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
 /* internal link scrolling */
 html {
     scroll-behavior: smooth;
@@ -755,6 +769,8 @@ html {
     color: var(--tertiary-color);
     border: 2px solid var(--tertiary-color);
 }
+
+/* SCHEDULE */
 
 /* media queries */
 @media screen and (min-width: 992px) {

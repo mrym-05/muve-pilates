@@ -70,21 +70,18 @@
 
             <div class="col-12">
 
+                <video autoplay muted loop playsinline>
+                    <source src="" type="video/mp4">
+                </video>
+
                 <div class="schedule-hero-content text-center mx-auto">
-
-                    <p class="schedule-hero-tagline">
-                        x
-                    </p>
-
                     <h1 class="schedule-hero-heading heading">
-                        x
+                        class schedule
                     </h1>
                     <hr>
-                    <h3 class="schedule-hero-caption">x</h3>
-
-                    <p class="lead schedule-hero-text mb-4">
-                        x
-                    </p>
+                    <h4 class="schedule-hero-caption">Browse our upcoming classes and book your place
+                        in just a few clicks.
+                        </h3>
 
                 </div>
 
@@ -96,7 +93,157 @@
 
     <main class="mt-0 flex-grow-1">
 
-    
+        <!-- calendar section -->
+        <section id="schedule-calendar" class="container">
+
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2>Select a Date</h2>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <!-- CALENDAR GOES HERE -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- selected date heading -->
+        <section id="selected-date" class="container">
+
+            <div class="row">
+
+                <div class="col-12">
+                    <h2>Classes for 16 November 2026</h2>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- schedule table section -->
+        <section id="class-schedule" class="container">
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <!-- CLASS CARD -->
+
+                    <div class="class-card">
+
+                        <div class="class-time">
+                            <p>9:00 AM • 50 min</p>
+                        </div>
+
+                        <div class="class-info">
+                            <h3>Beginner Pilates</h3>
+                            <p>Instructor Name</p>
+                        </div>
+
+                        <div class="class-booking">
+                            <p>£18</p>
+
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal">
+
+                                Book Now
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- booking modal -->
+        <div class="modal fade" id="booking-modal">
+
+            <div class="modal-dialog">
+
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h2 class="modal-title">
+                            Book Your Class
+                        </h2>
+
+                        <button class="btn-close" data-bs-dismiss="modal">
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+
+                        <form>
+
+                            <div class="mb-3">
+                                <label>Name</label>
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <div class="mb-3">
+                                <label>Email</label>
+                                <input type="email" class="form-control">
+                            </div>
+
+                            <div class="mb-3">
+                                <label>Phone Number</label>
+                                <input type="tel" class="form-control">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">
+
+                                Confirm Booking
+
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- not ready to book section -->
+        <section id="schedule-cta" class="container">
+
+            <div class="row">
+
+                <div class="col-12 text-center">
+
+                    <h2>Not Ready To Book Yet?</h2>
+
+                    <p>
+                        Explore our membership options or
+                        get in touch with our friendly team.
+                    </p>
+
+                    <a href="packages.html" class="btn btn-primary">
+                        View Packages
+                    </a>
+
+                    <a href="contact.html" class="btn btn-outline-primary">
+                        Get In Touch
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
 
     </main>
 
