@@ -815,6 +815,34 @@ html {
 }
 
 /* calendar */
+#schedule-calendar {
+    background-color: #c0aea6;
+    border-top: 10px solid var(--primary-color);
+}
+
+.calendar-card {
+    background-color: #fcfaf7;
+    padding: 1.5rem;
+    border-radius: 20px;
+    overflow-x: auto;
+}
+
+.calendar-day {
+    width: 25px;
+    height: 25px; 
+    border-radius: 50%;
+    border: none;
+    font-size: 12px;
+    font-family: var(--heading-font);
+    font-weight: 600;
+    color: var(--secondary-color);
+    background-color: var(--primary-color-highlight);
+}
+
+.calendar-day:hover {
+    background-color: var(--secondary-color-darker);
+}
+
 #available-classes,
 #fully-booked,
 #unavailable-dates {
@@ -822,6 +850,15 @@ html {
 }
 
 /* media queries */
+@media (min-width: 500px) {
+    .calendar-day {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+    }
+
+}
+
 @media screen and (min-width: 992px) {
     .app-text {
         padding-left: 150px;
