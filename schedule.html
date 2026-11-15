@@ -103,10 +103,10 @@
 
             <div class="row">
 
-                <div class="col-12">
+                <div class="col-12 col-md-6">
 
                     <!-- CALENDAR GOES HERE -->
-                    <table class="table table-bordered table-sm">
+                    <table class="table table-bordered table-sm text-center">
                         <thead>
 
                             <tr>
@@ -181,7 +181,7 @@
         <!-- selected date heading -->
         <section id="selected-date" class="container">
 
-            <div class="row">
+            <div class="row text-center">
 
                 <div class="col-12 selected-date-heading">
                     <h3>Select a date to view available classes</h3>
@@ -197,15 +197,15 @@
         </section>
 
         <!-- schedule table section -->
-        <section id="class-schedule" class="container">
+        <section id="schedule-results" class="container">
 
             <div class="row">
 
-                <div class="col-12">
+                <div class="col-12 col-md-6 mx-auto">
 
-                    <!-- CLASS CARD -->
+                    <!-- available dates -->
 
-                    <div class="available-classes">
+                    <div id="available-classes" class="mx-2">
 
                         <table class="table">
 
@@ -218,20 +218,52 @@
                             </thead>
 
                             <tbody>
+
                                 <tr>
-                                    <td>09:00</td>
-                                    <td>Beginner Pilates</td>
-                                    <td>
-                                        <button>
-                                            Book Now
-                                        </button>
+                                    <td>07:30 - 08:20</td>
+                                    <td>Reformer Pilates</td>
+                                    <td class="text-center">
+                                        <button>Book Now</button>
                                     </td>
                                 </tr>
+
+                                <tr>
+                                    <td>10:30 - 11:20</td>
+                                    <td>Reformer Pilates</td>
+                                    <td class="text-center">
+                                        <button>Book Now</button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>18:30 - 19:20</td>
+                                    <td>Reformer Pilates</td>
+                                    <td class="text-center">
+                                        <button>Book Now</button>
+                                    </td>
+                                </tr>
+
                             </tbody>
 
                         </table>
 
                     </div>
+
+                    <!-- fully booked -->
+                     <div id="fully-booked">
+                        
+                        <h3>date placeholder</h3>
+                        <p>Unfortunately all classes for this date have been fully booked.</p>
+                     </div>
+
+
+                     <!-- unavailable -->
+                      <div id="unavailable-dates">
+
+                        <h3>date placeholder</h3>
+                        <p>Class schedules for this date have not yet been released.</p>
+
+                      </div>
 
                 </div>
 

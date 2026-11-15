@@ -814,6 +814,13 @@ html {
     text-decoration: overline;
 }
 
+/* calendar */
+#available-classes,
+#fully-booked,
+#unavailable-dates {
+    display: none;
+}
+
 /* media queries */
 @media screen and (min-width: 992px) {
     .app-text {
