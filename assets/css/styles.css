@@ -922,11 +922,23 @@ html {
     border: 10px solid var(--secondary-color-darker);
 }
 
+.before-class-heading {
+    font-family: var(--heading-font);
+    color: var(--primary-color-darker);
+    text-transform: capitalize;
+}
+
+.before-class-text {
+    color: var(--primary-color-highlight);
+    font-size: 16;
+    font-weight: 600;
+}
+
 /* not ready to book section */
 #schedule-cta {
     background-color: var(--primary-color-highlight);
     border: 10px solid var(--primary-color-darker);
-    padding: 30px
+    padding: 30px 30px 50px;
 }
 
 #schedule-cta .heading {
