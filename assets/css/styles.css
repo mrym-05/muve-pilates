@@ -849,10 +849,24 @@ html {
 }
 
 
-/* #available-classes, */
+#available-classes,
 #fully-booked,
 #unavailable-dates {
     display: none;
+}
+
+.schedule-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+/* not ready to book section */
+#schedule-cta {
+    background-color: var(--primary-color-highlight);
+    border: 10px solid var(--primary-color-darker);
+    padding: 30px
 }
 
 /* media queries */
