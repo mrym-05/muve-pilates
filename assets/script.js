@@ -24,7 +24,7 @@ calendarDays.forEach((day) => {
 
         /* updates the heading with the selected date */
         selectedDate.innerHTML = `
-            <h3 class="mt-4 fw-bold">
+            <h3 class="mt-4 fw-bold selected-date-heading">
                 Classes for ${day.textContent} December 2026
             </h3>
         `;

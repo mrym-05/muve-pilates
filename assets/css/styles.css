@@ -473,7 +473,7 @@ html {
 }
 
 .social-links a:hover {
-     color: var(--secondary-color-darker);
+    color: var(--secondary-color-darker);
 }
 
 /* footer */
@@ -495,7 +495,7 @@ html {
     color: var(--secondary-color-darker);
 }
 
-.footer-link-heading, 
+.footer-link-heading,
 .footer-contact {
     color: var(--secondary-color);
     text-transform: uppercase;
@@ -503,12 +503,12 @@ html {
     font-size: 1.2rem;
 }
 
-.footer-link-list > a {
+.footer-link-list>a {
     color: var(--secondary-color-darker);
     text-decoration: none;
 }
 
-.footer-link-list > a:hover {
+.footer-link-list>a:hover {
     color: var(--secondary-color);
 }
 
@@ -516,11 +516,11 @@ html {
     color: var(--secondary-color-darker);
 }
 
-.contact > a {
+.contact>a {
     text-decoration: none;
 }
 
-.contact > a:hover {
+.contact>a:hover {
     color: var(--secondary-color);
 }
 
@@ -628,7 +628,7 @@ html {
     scroll-margin-top: 10px;
 }
 
-#story .heading, 
+#story .heading,
 #story hr {
     color: var(--secondary-color);
 }
@@ -644,7 +644,7 @@ html {
     margin: 0 auto;
 }
 
-.our-story-img img{
+.our-story-img img {
     max-width: 75%;
     max-height: 400px;
     border-radius: 60px 60px 0 0;
@@ -660,7 +660,7 @@ html {
     scroll-margin-top: 60px;
 }
 
-#class-types h2, 
+#class-types h2,
 .class-type-sub-heading {
     color: var(--secondary-color);
 }
@@ -839,7 +839,7 @@ html {
 
 .calendar-table th {
     font-family: var(--heading-font);
-    color: var(--primary-color-highlight); 
+    color: var(--primary-color-highlight);
 }
 
 .calendar-day {
@@ -915,6 +915,13 @@ html {
     font-weight: 600;
 }
 
+/* class prep section */
+#class-prep {
+    background-color: var(--secondary-color);
+    padding-bottom: 40px;
+    border: 10px solid var(--secondary-color-darker);
+}
+
 /* not ready to book section */
 #schedule-cta {
     background-color: var(--primary-color-highlight);
@@ -954,17 +961,17 @@ html {
 
 /* media queries */
 @media screen and (min-width: 992px) {
-    /* app section */
+    /* STUDIO: app section */
     .app-text {
         padding-left: 150px;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    /* app section */
+    /* STUDIO: app section */
     .info-card-container {
-    margin-left: 75px;
-}
+        margin-left: 75px;
+    }
 
     .google-map iframe {
         margin-right: 75px;
@@ -975,10 +982,11 @@ html {
 }
 
 @media screen and (min-width: 1440px) {
-    /* app section */
+    /* STUDIO: app section */
     .info-card-container {
-    margin-left: 175px !important;
-}
+        margin-left: 175px !important;
+    }
+
     .google-map iframe {
         margin-right: 175px !important;
     }
