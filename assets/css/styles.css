@@ -819,6 +819,10 @@ html {
     background-color: var(--secondary-color-highlight);
     border-top: 10px solid var(--primary-color);
     padding-bottom: 70px;
+    background-image: url(../images/schedule-background.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .calendar-card:hover {
@@ -830,6 +834,11 @@ html {
     max-width: 300px;
     width: 100%;
     border-radius: 25px;
+}
+
+.calendar-table th {
+    font-family: var(--heading-font);
+    color: var(--primary-color-highlight); 
 }
 
 .calendar-day {
@@ -870,6 +879,20 @@ html {
     flex-direction: column;
     justify-content: center;
     height: 100%;
+}
+
+.selected-date-heading {
+    color: var(--primary-color-darker);
+    font-family: var(--heading-font);
+}
+
+#schedule-content {
+    color: var(--primary-color-highlight);
+}
+
+.fully-booked-message,
+.unavailable-message {
+    color: var(--primary-color-highlight);
 }
 
 /* not ready to book section */
