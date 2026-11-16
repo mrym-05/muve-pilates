@@ -1036,8 +1036,9 @@ html {
     min-height: 0;
 }
 
-.packages-hero-heading {
-    color: var(--tertiary-color);
+.packages-hero-heading,
+.packages-hero-content hr {
+    color: var(--primary-color);
 }
 
 .packages-hero-caption {
@@ -1050,12 +1051,16 @@ html {
 #offer {
     padding: 50px 20px;
     background-color: var(--secondary-color-darker);
-    border: 10px solid var(--tertiary-color-highlight);
+    border-top: 10px solid var(--primary-color-highlight);
+    border-bottom: 10px solid var(--primary-color-highlight);
+    background-image: url(../images/packages-hero.webp);
+    background-size: cover;
+    background-position: center;                  
+    background-repeat: no-repeat;
 }
 
-#offer .arched-background {
-    background-color: var(--secondary-color-highlight);
-    border-color: var(--primary-color);
+.passes-heading {
+    color: var(--secondary-color);
 }
 
 /* media queries */
