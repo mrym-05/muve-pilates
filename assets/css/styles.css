@@ -818,6 +818,7 @@ html {
 #booking-section {
     background-color: var(--secondary-color-highlight);
     border-top: 10px solid var(--primary-color);
+    padding-bottom: 70px;
 }
 
 .calendar-card:hover {
