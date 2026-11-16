@@ -848,6 +848,15 @@ html {
     transform: scale(1.1);
 }
 
+.day-disabled {
+    background-color: rgba(148, 146, 146, 0.562);
+    text-decoration: line-through;
+}
+
+.day-disabled:hover {
+    transform: none !important;
+    background-color: rgba(148, 146, 146, 0.562);
+}
 
 #available-classes,
 #fully-booked,
