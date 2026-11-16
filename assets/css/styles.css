@@ -1016,6 +1016,26 @@ html {
     outline: 2px solid var(--primary-color);
 }
 
+/* PACKAGES & MEMBERSHIPS SECTION */
+/* hero */
+.packages-hero-img {
+    min-height: 30svh;
+    background-image: url("../images/packages-hero.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* account for fixed navbar */
+    padding: 90px 0 24px;
+    display: grid;
+    place-items: center;
+}
+
+.hero .row {
+    width: 100%;
+    min-height: 0;
+}
+
 /* media queries */
 @media screen and (min-width: 992px) {
     /* STUDIO: app section */
