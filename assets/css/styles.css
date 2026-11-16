@@ -1036,6 +1036,28 @@ html {
     min-height: 0;
 }
 
+.packages-hero-heading {
+    color: var(--tertiary-color);
+}
+
+.packages-hero-caption {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    color: var(--primary-color-darker);
+}
+
+/* intro offer */
+#offer {
+    padding: 50px 20px;
+    background-color: var(--secondary-color-darker);
+    border: 10px solid var(--tertiary-color-highlight);
+}
+
+#offer .arched-background {
+    background-color: var(--secondary-color-highlight);
+    border-color: var(--primary-color);
+}
+
 /* media queries */
 @media screen and (min-width: 992px) {
     /* STUDIO: app section */
