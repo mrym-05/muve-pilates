@@ -926,6 +926,36 @@ html {
     font-weight: 700;
 }
 
+.modal-input {
+    font-weight: 600;
+    color: #2c1009;
+}
+
+.modal-cancel {
+    background-color: rgb(153, 52, 52);
+    color: white;
+}
+
+.modal-cancel:hover {
+    background-color: rgb(179, 70, 70);
+    color: white;
+}
+
+.modal-confirm {
+    background-color: rgb(70, 105, 72);
+    color: white;
+}
+
+.modal-confirm:hover {
+    background-color: rgb(101, 141, 103);
+    color: white;
+}
+
+.modal-cancel:hover,
+.modal-confirm:hover {
+    transform: scale(1.1);
+}
+
 /* class prep section */
 #class-prep {
     background-color: var(--secondary-color);
