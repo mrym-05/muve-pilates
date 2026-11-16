@@ -770,6 +770,10 @@ html {
     border: 2px solid var(--tertiary-color);
 }
 
+.unsubscribe i {
+    text-decoration: underline;
+}
+
 /* SCHEDULE */
 /* hero */
 .hero-video {
