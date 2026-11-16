@@ -265,7 +265,9 @@
                                         <td>07:30 - 08:20</td>
                                         <td>Reformer Pilates</td>
                                         <td class="text-center">
-                                            <button>Book Now</button>
+                                            <button data-bs-toggle="modal" data-bs-target="#bookingModal">
+                                                Book Now
+                                            </button>
                                         </td>
                                     </tr>
 
@@ -273,7 +275,9 @@
                                         <td>10:30 - 11:20</td>
                                         <td>Reformer Pilates</td>
                                         <td class="text-center">
-                                            <button>Book Now</button>
+                                            <button data-bs-toggle="modal" data-bs-target="#bookingModal">
+                                                Book Now
+                                            </button>
                                         </td>
                                     </tr>
 
@@ -281,7 +285,9 @@
                                         <td>18:30 - 19:20</td>
                                         <td>Reformer Pilates</td>
                                         <td class="text-center">
-                                            <button>Book Now</button>
+                                            <button data-bs-toggle="modal" data-bs-target="#bookingModal">
+                                                Book Now
+                                            </button>
                                         </td>
                                     </tr>
 
@@ -320,19 +326,21 @@
         </section>
 
         <!-- booking modal -->
-        <div class="modal fade" id="booking-modal">
+        <div class="modal fade" id="bookingModal" tabindex="-1">
 
             <div class="modal-dialog">
 
                 <div class="modal-content">
 
                     <div class="modal-header">
-                        <h2 class="modal-title">
-                            Book Your Class
-                        </h2>
 
-                        <button class="btn-close" data-bs-dismiss="modal">
+                        <h5 class="modal-title">
+                            Book Your Class
+                        </h5>
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal">
                         </button>
+
                     </div>
 
                     <div class="modal-body">
@@ -340,27 +348,52 @@
                         <form>
 
                             <div class="mb-3">
-                                <label>Name</label>
+
+                                <label class="form-label">
+                                    Full Name
+                                </label>
+
                                 <input type="text" class="form-control">
+
                             </div>
 
                             <div class="mb-3">
-                                <label>Email</label>
+
+                                <label class="form-label">
+                                    Email Address
+                                </label>
+
                                 <input type="email" class="form-control">
+
                             </div>
 
                             <div class="mb-3">
-                                <label>Phone Number</label>
+
+                                <label class="form-label">
+                                    Phone Number
+                                </label>
+
                                 <input type="tel" class="form-control">
+
                             </div>
-
-                            <button type="submit" class="btn btn-primary">
-
-                                Confirm Booking
-
-                            </button>
 
                         </form>
+
+                    </div>
+
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+
+                            Cancel
+
+                        </button>
+
+                        <button type="button" class="btn btn-primary">
+
+                            Confirm Booking
+
+                        </button>
 
                     </div>
 
@@ -373,7 +406,7 @@
         <section id="class-prep" class="container">
 
             <div class="row g-3 text-center mb-4 mx-auto">
-            
+
                 <div class="col-12">
 
                     <h1 class="heading">Before your class</h1>
@@ -382,35 +415,41 @@
 
                 <div class="col-12 col-md-6 col-lg-3">
 
-                    <h2 class="before-class-heading fw-bold"><i class="fa-solid fa-clipboard-list"></i> Arrive early</h2>
-                    <p class="before-class-text">Arrive a little early to get settled (and if you're new.. meet your instructor before class!)</p>
-                
+                    <h2 class="before-class-heading fw-bold"><i class="fa-solid fa-clipboard-list"></i> Arrive early
+                    </h2>
+                    <p class="before-class-text">Arrive a little early to get settled (and if you're new.. meet your
+                        instructor before class!)</p>
+
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-3">
 
                     <h2 class="before-class-heading fw-bold"><i class="fa-solid fa-clipboard-list"></i> Grip socks</h2>
-                    <p class="before-class-text">Grip socks are required help provide stability and safety during your reformer session.</p>
-                
+                    <p class="before-class-text">Grip socks are required help provide stability and safety during your
+                        reformer session.</p>
+
                 </div>
 
 
                 <div class="col-12 col-md-6 col-lg-3">
-                
-                    <h2 class="before-class-heading fw-bold"><i class="fa-solid fa-clipboard-list"></i> Stay hydrated</h2>
+
+                    <h2 class="before-class-heading fw-bold"><i class="fa-solid fa-clipboard-list"></i> Stay hydrated
+                    </h2>
                     <p class="before-class-text">Bring a water bottle and stay hydrated before and after your class.</p>
-                
+
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-3">
-                
-                    <h2 class="before-class-heading fw-bold"><i class="fa-solid fa-clipboard-list"></i> Any injuries?</h2>
-                    <p class="before-class-text">Please inform your instructor of any injuries or concerns before your session starts.</p>
-                
+
+                    <h2 class="before-class-heading fw-bold"><i class="fa-solid fa-clipboard-list"></i> Any injuries?
+                    </h2>
+                    <p class="before-class-text">Please inform your instructor of any injuries or concerns before your
+                        session starts.</p>
+
                 </div>
-            
+
             </div>
-        
+
         </section>
 
         <!-- not ready to book section -->
@@ -427,13 +466,17 @@
                         get in touch with our friendly team.
                     </p>
 
-                    <a href="packages.html" class="btn schedule-packages-cta">
-                        View Packages
-                    </a>
+                    <div class="d-flex flex-wrap gap-2 justify-content-center">
 
-                    <a href="contact.html" class="btn btn-outline schedule-contact-cta">
-                        Get In Touch
-                    </a>
+                        <a href="packages.html" class="btn schedule-packages-cta">
+                            View Packages
+                        </a>
+
+                        <a href="contact.html" class="btn btn-outline schedule-contact-cta">
+                            Get In Touch
+                        </a>
+
+                    </div>
 
                 </div>
 
