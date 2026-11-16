@@ -160,6 +160,10 @@ html {
     background-color: white;
 }
 
+.home-card-body {
+    background: linear-gradient(to bottom, var(--secondary-color), #dbcbc4);
+}
+
 .card-name {
     font-family: var(--heading-font);
     font-weight: 700;
@@ -188,6 +192,7 @@ html {
     border: 10px solid var(--primary-color);
     background-color: var(--primary-color-highlight);
     padding: 55px 0 20px;
+    background: linear-gradient(to bottom, var(--secondary-color-darker), var(--primary-color-highlight));
 }
 
 .levels-heading {
@@ -626,6 +631,7 @@ html {
     background-color: #532d26;
     border: 10px solid var(--primary-color-darker);
     scroll-margin-top: 10px;
+    background: linear-gradient(to bottom, var(--primary-color-highlight), var(--primary-color));
 }
 
 #story .heading,
