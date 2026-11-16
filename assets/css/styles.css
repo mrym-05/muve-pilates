@@ -922,14 +922,46 @@ html {
     padding: 30px
 }
 
+#schedule-cta .heading {
+    color: var(--secondary-color);
+}
+
+.schedule-packages-cta {
+    background-color: var(--secondary-color);
+    color: var(--primary-color-darker);
+    outline: 2px solid var(--primary-color);
+    font-weight: 600;
+}
+
+.schedule-packages-cta:hover {
+    background-color: var(--secondary-color-darker);
+    color: var(--secondary-color);
+    outline: 2px solid var(--tertiary-color);
+}
+
+.schedule-contact-cta {
+    background-color: var(--secondary-color-darker);
+    color: var(--secondary-color);
+    outline: 2px solid var(--tertiary-color);
+    font-weight: 600;
+}
+
+.schedule-contact-cta:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color-darker);
+    outline: 2px solid var(--primary-color);
+}
+
 /* media queries */
 @media screen and (min-width: 992px) {
+    /* app section */
     .app-text {
         padding-left: 150px;
     }
 }
 
 @media screen and (min-width: 1200px) {
+    /* app section */
     .info-card-container {
     margin-left: 75px;
 }
@@ -943,10 +975,10 @@ html {
 }
 
 @media screen and (min-width: 1440px) {
+    /* app section */
     .info-card-container {
     margin-left: 175px !important;
 }
-
     .google-map iframe {
         margin-right: 175px !important;
     }
