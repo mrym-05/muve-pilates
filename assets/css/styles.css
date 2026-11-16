@@ -1021,6 +1021,11 @@ html {
 }
 
 @media screen and (min-width: 1200px) {
+    /* STUDIO: story section */
+    .story-text {
+        padding-left: 100px;
+    }
+
     /* STUDIO: app section */
     .info-card-container {
         margin-left: 75px;
