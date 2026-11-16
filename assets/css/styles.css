@@ -915,6 +915,17 @@ html {
     font-weight: 600;
 }
 
+/* modal */
+.modal-content {
+    margin-top: 50%;
+}
+
+.modal-title {
+    color: var(--primary-color-highlight);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
 /* class prep section */
 #class-prep {
     background-color: var(--secondary-color);
