@@ -1041,3 +1041,11 @@ html {
     width: 100%;
     min-height: 0;
 }
+
+.packages-hero-heading {
+    font-family: var(--heading-font);
+}
+
+.package-hero-content > .hero-text {
+    color: var(--primary-color-darker);
+}
