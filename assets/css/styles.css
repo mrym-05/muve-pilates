@@ -26,9 +26,9 @@
 }
 
 /* general */
-.container {
+/* .container {
     max-width: 100%;
-}
+} */
 
 .background-colour {
     background-color: var(--secondary-color);
