@@ -26,9 +26,9 @@
 }
 
 /* general */
-.container {
+/* .container {
     max-width: 100%;
-}
+} */
 
 .background-colour {
     background-color: var(--secondary-color);
@@ -1032,7 +1032,7 @@ html {
     background-repeat: no-repeat;
 
     /* account for fixed navbar */
-    padding: 90px 0 24px;
+    padding: 70px 0 0 24px;
     display: grid;
     place-items: center;
 }
@@ -1042,32 +1042,6 @@ html {
     min-height: 0;
 }
 
-.packages-hero-heading,
-.packages-hero-content hr {
-    color: var(--primary-color);
-}
-
-.packages-hero-caption {
-    text-transform: uppercase;
-    font-size: 1.1rem;
-    color: var(--primary-color-darker);
-}
-
-/* intro offer */
-#offer {
-    padding: 50px 20px;
-    background-color: var(--secondary-color-darker);
-    border-top: 10px solid var(--primary-color-highlight);
-    border-bottom: 10px solid var(--primary-color-highlight);
-    background-image: url(../images/packages-hero.webp);
-    background-size: cover;
-    background-position: center;                  
-    background-repeat: no-repeat;
-}
-
-.passes-heading {
-    color: var(--secondary-color);
-}
 
 /* media queries */
 @media screen and (min-width: 992px) {

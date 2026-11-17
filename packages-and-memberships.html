@@ -62,148 +62,361 @@
         </nav>
     </header>
 
-
-    <!-- hero image -->
-
-    <section class="container packages-hero-img">
-
-        <div class="row align-items-center">
-
-            <div class="col-12">
-
-                <div class="packages-hero-content text-center mx-auto py-3">
-
-                    <h1 class="packages-hero-heading heading">
-                        Our Packages
-                    </h1>
-                    <hr>
-                    <h4 class="packages-hero-caption">Buy Packages and Memberships</h4>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
     <main class="mt-0 flex-grow-1">
 
-        <!-- intro offer -->
-        <section id="offer" class="container">
 
-            <div class="row">
-                <div class="col-12 pb-4 mb-3">
-                    <h1 class="heading passes-heading text-center">Class Passes</h1>
-                </div>
-            </div>
+        <main>
 
-            <div class="row mb-3">
+            <!-- hero -->
+            <section class="hero-banner d-flex align-items-center packages-hero-img">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="package-hero-content text-center">
+                                
+                                <h1 class="hero-heading">
+                                    Packages & Memberships
+                                </h1>
 
-                <div class="col-12 mx-auto">
-                    <div class="card h-100">
-                        <div class="card-body home-card-body text-center">
-                            <h3 class="h5 card-name">Intro to Pilates</h3>
-                            <p class="card-description">
-                                £50
-                                <br>
-                                <hr>
-                                For new comers wanting to get a taste of pilates, enjoy 3 classes for £50.
-                            </p>
-                            <p class="validity"><i>Valid for 30 days</i></p>
-                            <hr>
+                                <p class="hero-text">
+                                    caption.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </section>
 
-            </div>
 
-            <div class="row g-3">
+            <!-- intro offer -->
+            <section id="intro-offer">
 
-                <div class="col-12 col-md-3 mx-auto">
-                    <div class="card h-100">
-                        <div class="card-body home-card-body text-center">
-                            <h3 class="h5 card-name">1 Class</h3>
-                            <p class="card-description">
-                                £22
-                                <br>
-                                <hr>
-                            </p>
-                            <p class="validity">
-                                <i>Valid for 30 days</i>
-                            </p>
-                            <hr>
+                <div class="container my-5">
+
+                    <div class="card intro-card">
+                        <div class="card-body p-4 p-lg-5">
+
+                            <div class="row align-items-center g-3">
+
+                                <div class="col-12 col-lg-5 text-center text-lg-start">
+                                    <p class="offer-label mb-2">
+                                        A little something to get you started
+                                    </p>
+
+                                    <h2 class="heading mb-0">
+                                        New to Müve?
+                                    </h2>
+                                </div>
+
+                                <div class="col-12 col-lg-7 text-center text-lg-start">
+                                    <h3 class="offer-price">
+                                        3 Introductory Classes for £50
+                                    </h3>
+
+                                    <p class="offer-info mb-0">
+                                        Add your introductory offer information here.
+                                        Tell visitors what is included and why they
+                                        should take advantage of this offer.
+                                    </p>
+                                </div>
+
+                            </div>
+
                         </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- packages, memberships and giftcards tab -->
+            <section id="rythm">
+                <div class="container my-5">
+                    <div class="row g-3">
+
+                        <!-- heading -->
+                        <div class="col-12 text-center">
+                            <h2 class="heading">
+                                Choose your rhythm
+                            </h2>
+
+                            <p class="sub-heading">
+                                Find the option that works for you.
+                            </p>
+                        </div>
+
+
+                        <!-- bootstrap tabs -->
+                        <div class="col-12">
+
+                            <ul class="nav nav-pills rhythm-tabs justify-content-center mb-4" id="rhythmTabs"
+                                role="tablist">
+
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="packages-tab" data-bs-toggle="pill"
+                                        data-bs-target="#packages" type="button" role="tab" aria-controls="packages"
+                                        aria-selected="true">
+
+                                        PACKAGES
+
+                                    </button>
+                                </li>
+
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="memberships-tab" data-bs-toggle="pill"
+                                        data-bs-target="#memberships" type="button" role="tab"
+                                        aria-controls="memberships" aria-selected="false">
+
+                                        MEMBERSHIPS
+
+                                    </button>
+                                </li>
+
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="giftcards-tab" data-bs-toggle="pill"
+                                        data-bs-target="#giftcards" type="button" role="tab" aria-controls="giftcards"
+                                        aria-selected="false">
+
+                                        GIFT CARDS
+
+                                    </button>
+                                </li>
+
+                            </ul>
+
+
+                            <!-- tab content -->
+                            <div class="tab-content" id="rhythmTabsContent">
+
+
+                                <!-- packages -->
+                                <div class="tab-pane fade show active" id="packages" role="tabpanel"
+                                    aria-labelledby="packages-tab" tabindex="0">
+
+                                    <div class="row g-3">
+
+                                        <div class="col-12 col-sm-6 col-lg-3">
+                                            <div class="card h-100 rhythm-card">
+                                                <div class="card-body text-center p-4">
+                                                    <h3 class="card-name">Package 1</h3>
+                                                    <p class="card-description">
+                                                        Add package information here.
+                                                    </p>
+                                                    <p class="card-price">£XX</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-sm-6 col-lg-3">
+                                            <div class="card h-100 rhythm-card">
+                                                <div class="card-body text-center p-4">
+                                                    <h3 class="card-name">Package 2</h3>
+                                                    <p class="card-description">
+                                                        Add package information here.
+                                                    </p>
+                                                    <p class="card-price">£XX</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-sm-6 col-lg-3">
+                                            <div class="card h-100 rhythm-card">
+                                                <div class="card-body text-center p-4">
+                                                    <h3 class="card-name">Package 3</h3>
+                                                    <p class="card-description">
+                                                        Add package information here.
+                                                    </p>
+                                                    <p class="card-price">£XX</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-sm-6 col-lg-3">
+                                            <div class="card h-100 rhythm-card">
+                                                <div class="card-body text-center p-4">
+                                                    <h3 class="card-name">Package 4</h3>
+                                                    <p class="card-description">
+                                                        Add package information here.
+                                                    </p>
+                                                    <p class="card-price">£XX</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <!-- memberships -->
+                                <div class="tab-pane fade" id="memberships" role="tabpanel"
+                                    aria-labelledby="memberships-tab" tabindex="0">
+
+                                    <div class="row g-3 justify-content-center">
+
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="card h-100 rhythm-card">
+                                                <div class="card-body text-center p-4">
+                                                    <h3 class="card-name">Membership 1</h3>
+                                                    <p class="card-description">
+                                                        Add membership information here.
+                                                    </p>
+                                                    <p class="card-price">£XX / month</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="card h-100 rhythm-card">
+                                                <div class="card-body text-center p-4">
+                                                    <h3 class="card-name">Membership 2</h3>
+                                                    <p class="card-description">
+                                                        Add membership information here.
+                                                    </p>
+                                                    <p class="card-price">£XX / month</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="card h-100 rhythm-card">
+                                                <div class="card-body text-center p-4">
+                                                    <h3 class="card-name">Membership 3</h3>
+                                                    <p class="card-description">
+                                                        Add membership information here.
+                                                    </p>
+                                                    <p class="card-price">£XX / month</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <!-- gift card -->
+                                <div class="tab-pane fade" id="giftcards" role="tabpanel"
+                                    aria-labelledby="giftcards-tab" tabindex="0">
+
+                                    <div class="row justify-content-center">
+
+                                        <div class="col-12 col-md-8 col-lg-6">
+                                            <div class="card h-100 rhythm-card">
+                                                <div class="card-body text-center p-5">
+                                                    <h3 class="card-name">Gift Cards</h3>
+                                                    <p class="card-description">
+                                                        Add gift card information here.
+                                                    </p>
+                                                    <p class="card-price">£XX</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
-                <div class="col-12 col-md-3 mx-auto">
-                    <div class="card h-100">
-                        <div class="card-body home-card-body text-center">
-                            <h3 class="h5 card-name">5 Classes</h3>
-                            <p class="card-description">
-                                £100
-                                <br>
-                                <hr>
-                            </p>
-                            <p class="validity">
-                                <i>Valid for 60 days</i>
-                            </p>
-                            <hr>
+            </section>
+
+
+            <!-- booking inquiry -->
+            <section id="booking-inquiry">
+
+                <div class="container my-5">
+
+                    <div class="row justify-content-center">
+
+                        <div class="col-12 col-lg-8">
+
+                            <div class="text-center mb-4">
+                                <h2 class="heading">
+                                    Have a question?
+                                </h2>
+
+                                <p class="sub-heading">
+                                    Get in touch with our team.
+                                </p>
+                            </div>
+
+
+                            <form class="booking-form">
+
+                                <!-- name -->
+                                <div class="mb-3">
+                                    <label for="inquiryName" class="form-label">
+                                        Full Name
+                                    </label>
+
+                                    <input type="text" class="form-control" id="inquiryName" name="name"
+                                        placeholder="Your name" autocomplete="name" required>
+                                </div>
+
+
+                                <!-- email -->
+                                <div class="mb-3">
+                                    <label for="inquiryEmail" class="form-label">
+                                        Email Address
+                                    </label>
+
+                                    <input type="email" class="form-control" id="inquiryEmail" name="email"
+                                        placeholder="Your email address" autocomplete="email" required>
+                                </div>
+
+
+                                <!-- dropdown -->
+                                <div class="mb-3">
+                                    <label for="inquiryType" class="form-label">
+                                        What are you enquiring about?
+                                    </label>
+
+                                    <select class="form-select" id="inquiryType" name="inquiry" required>
+
+                                        <option value="" selected disabled>
+                                            Please select an option
+                                        </option>
+
+                                        <option value="packages">Packages</option>
+                                        <option value="memberships">Memberships</option>
+                                        <option value="gift-cards">Gift Cards</option>
+                                        <option value="other">Other</option>
+
+                                    </select>
+                                </div>
+
+
+                                <!-- message -->
+                                <div class="mb-3">
+                                    <label for="inquiryMessage" class="form-label">
+                                        Your Message
+                                    </label>
+
+                                    <textarea class="form-control" id="inquiryMessage" name="message" rows="5"
+                                        placeholder="How can we help?" required></textarea>
+                                </div>
+
+
+                                <!-- submit -->
+                                <div class="text-center mt-4">
+                                    <button type="submit" class="btn button">
+                                        Send Inquiry
+                                    </button>
+                                </div>
+
+                            </form>
+
                         </div>
+
                     </div>
+
                 </div>
-                
+            </section>
 
-                <div class="col-12 col-md-3 mx-auto">
-                    <div class="card h-100">
-                        <div class="card-body home-card-body text-center">
-                            <h3 class="h5 card-name">10 Classes</h3>
-                            <p class="card-description">
-                                £190
-                                <br>
-                                <hr>
-                            </p>
-                            <p class="validity">
-                                <i>Valid for 60 days</i>
-                            </p>
-                            <hr>
-                        </div>
-                    </div>
-                </div>
+        </main>
 
-                <div class="col-12 col-md-3 mx-auto">
-                    <div class="card h-100">
-                        <div class="card-body home-card-body text-center">
-                            <h3 class="h5 card-name">20 Classes</h3>
-                            <p class="card-description">
-                                £350
-                                <br>
-                                <hr>
-                            </p>
-                            <p class="validity">
-                                <i>Valid for 90 days</i>
-                            </p>
-                            <hr>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- packages -->
-        <section></section>
-
-        <!-- memberships -->
-        <section></section>
-
-        <!-- gift card -->
-        <section></section>
-
-        <!-- booking inquiry -->
-        <section></section>
 
     </main>
 
