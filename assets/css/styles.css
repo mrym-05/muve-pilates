@@ -209,7 +209,26 @@ html {
     font-size: .8rem;
 }
 
-/* MINE */
+.cta-heading{
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 3rem;
+}
+
+.timetable-btn {
+    padding: 15px 25px;
+    background-color: var(--secondary-color-darker);
+    color: var(--secondary-color);
+    border: 3px solid var(--line);
+}
+
+.timetable-btn:hover {
+    background-color: var(--primary-color-highlight);
+    color: white;
+    outline: 3px solid var(--tertiary-color);
+}
+
+/* OLD */
 /* #classes {
     scroll-margin-top: 79px;
     background-color: var(--secondary-color);
