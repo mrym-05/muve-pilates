@@ -16,9 +16,9 @@
     --secondary-color-highlight: #f1e9e7;
 
     /* browns */
-    --tertiary-color: #21140F;
-    --tertiary-color-highlight: #281B14;
-    --tertiary-color-warmer: #2E1915;
+    --tertiary-color: #2a1c16;
+    --tertiary-color-highlight: #49342b;
+    --tertiary-color-warmer: #2b1a13;
 
     /* FONTS */
     --heading-font: "Cormorant Garamond", Georgia, serif;
@@ -26,7 +26,6 @@
 
     /* CARD BORDERS */
     --line: rgba(74, 51, 40, 0.16);
-    --line-light: rgba(243, 234, 220, 0.18);
 }
 
 /* general */
@@ -38,6 +37,10 @@
     text-transform: capitalize;
 }
 
+.section-title {
+    font-size: 2.6rem;
+}
+
 .section-head {
     font-family: var(--heading-font);
     font-weight: 600;
@@ -47,6 +50,13 @@
     text-transform: uppercase;
     font-size: 12px;
     color: var(--primary-color-highlight);
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: var(--tertiary-color-warmer);
+    font-style: italic;
 }
 
 html,
@@ -141,10 +151,11 @@ html {
     background-color: var(--secondary-color-darker);
 }
 
-/* classes info */
 /* UPDATED */
+/* classes info */
 #classes {
     background-color: var(--secondary-color);
+    scroll-margin-top: 50px;
 }
 
 .section-title em {
@@ -160,6 +171,10 @@ html {
     display: flex;
     flex-direction: column;
     height: 100%;
+}
+
+.class-card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 .class-num {
@@ -212,11 +227,11 @@ html {
 .cta-heading{
     font-family: var(--heading-font);
     color: var(--primary-color);
-    font-size: 3rem;
+    font-size: 2.2rem;
 }
 
 .timetable-btn {
-    padding: 15px 25px;
+    padding: 10px 20px;
     background-color: var(--secondary-color-darker);
     color: var(--secondary-color);
     border: 3px solid var(--line);
@@ -227,63 +242,19 @@ html {
     color: white;
     outline: 3px solid var(--tertiary-color);
 }
+/* levels */
+#levels .section-title {
+    color: var(--tertiary-color-highlight);
+    font-family: var(--heading-font);
+}
 
 /* OLD */
-/* #classes {
-    scroll-margin-top: 79px;
-    background-color: var(--secondary-color);
-    padding-bottom: 50px;
-    border: 10px solid var(--secondary-color-darker);
-}
-
-.card {
-    border: 1px solid var(--primary-color);
-    border-radius: 0px;
-}
-
-.card:hover {
-    transform: scale(1.03);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-}
-
-.home-card-body {
-    color: var(--primary-color);
-    background-color: white;
-}
-
-.home-card-body {
-    background: linear-gradient(to bottom, var(--secondary-color), #dbcbc4);
-}
-
-.card-name {
-    font-family: var(--heading-font);
-    font-weight: 700;
-    font-size: 1.8rem;
-}
-
-.card-description {
-    text-transform: uppercase;
-    font-size: 14px;
-}
-
-.schedule-btn {
-    background-color: var(--primary-color);
-    padding: 10px 20px;
-    color: var(--secondary-color);
-    text-transform: uppercase;
-}
-
-.schedule-btn:hover {
-    background-color: var(--tertiary-color);
-    color: var(--secondary-color);
-} */
 
 /* levels */
 #levels {
-    border: 10px solid var(--primary-color);
     background-color: var(--primary-color-highlight);
     padding: 55px 0 20px;
-    background: linear-gradient(to bottom, var(--secondary-color-darker), var(--primary-color-highlight));
+    background: linear-gradient(to bottom, var(--secondary-color), var(--tertiary-color-highlight));
 }
 
 .levels-heading {
