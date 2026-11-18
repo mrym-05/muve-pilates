@@ -49,7 +49,7 @@
 .sub-heading {
     text-transform: uppercase;
     font-size: 12px;
-    color: var(--primary-color-highlight);
+    color: var(--secondary-color-highlight);
 }
 
 .eyebrow {
@@ -166,10 +166,11 @@ html {
     background-color: var(--secondary-color-highlight);
     border: 1px solid var(--line);
     border-top: 3px solid var(--line);
-    padding: 2.6rem 2rem 2rem;
+    
+    padding: 2rem 1rem 2rem;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    
 }
 
 .class-card:hover {
