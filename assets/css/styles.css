@@ -54,7 +54,7 @@
 
 .eyebrow {
     text-transform: uppercase;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: var(--tertiary-color-warmer);
     font-style: italic;
 }
@@ -100,7 +100,7 @@ html {
 
 /* hero */
 .hero {
-    min-height: 88svh;
+    min-height: 65vh;
     background-image: url("../images/hero-img.webp");
     background-size: cover;
     background-position: center;
@@ -110,11 +110,6 @@ html {
     padding: 90px 0 24px;
     display: grid;
     place-items: center;
-}
-
-.hero .row {
-    width: 100%;
-    min-height: 0;
 }
 
 .hero-content {
@@ -154,8 +149,12 @@ html {
 /* UPDATED */
 /* classes info */
 #classes {
-    background-color: var(--secondary-color);
+    background: linear-gradient(to bottom, var(--secondary-color), var(--secondary-color-darker));
     scroll-margin-top: 50px;
+    border-top: 10px solid var(--primary-color-darker);
+}
+.class-eyebrow {
+    font-size: 1.4rem;
 }
 
 .section-title em {
@@ -191,6 +190,7 @@ html {
     color: var(--tertiary-color);
     margin-bottom: .8rem;
     font-family: var(--heading-font);
+    min-width: 0;
 }
 
 .class-card p {
@@ -198,6 +198,7 @@ html {
     font-size: .96rem;
     margin-bottom: 1.6rem;
     flex-grow: 1;
+    font-weight: 500;
 }
 
 .class-meta {
@@ -226,14 +227,14 @@ html {
 
 .cta-heading{
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-size: 2.2rem;
 }
 
 .timetable-btn {
     padding: 10px 20px;
-    background-color: var(--secondary-color-darker);
-    color: var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: var(--primary-color-highlight);
     border: 3px solid var(--line);
 }
 
@@ -242,31 +243,33 @@ html {
     color: white;
     outline: 3px solid var(--tertiary-color);
 }
-/* levels */
-#levels .section-title {
-    color: var(--tertiary-color-highlight);
-    font-family: var(--heading-font);
-}
-
-/* OLD */
 
 /* levels */
 #levels {
     background-color: var(--primary-color-highlight);
-    padding: 55px 0 20px;
-    background: linear-gradient(to bottom, var(--secondary-color), var(--tertiary-color-highlight));
+    padding: 55px 0 60px;
+    background: linear-gradient(to bottom, var(--secondary-color-darker), var(--tertiary-color-highlight));
+}
+
+#levels .section-title {
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
 }
 
 .levels-heading {
     color: var(--secondary-color);
 }
 
-.arched-background {
-    background-color: rgba(0, 0, 0, .45);
-    padding: 5px;
-    border-radius: 50px 50px 0 0;
-    border: 4px solid var(--tertiary-color);
+.section-title em {
+    text-decoration: underline;
 }
+
+/* OLD */
+
+/* levels */
+
+
+
 
 .levels-text {
     color: var(--secondary-color-highlight);
@@ -275,6 +278,8 @@ html {
     font-size: 14px;
     text-transform: uppercase;
 }
+
+
 
 #levels hr {
     color: var(--secondary-color);
@@ -318,9 +323,9 @@ html {
 
 /* newcomer info */
 #intro-offer {
-    background-color: var(--tertiary-color-highlight);
+    background-color: var(--tertiary-color);
     padding: 20px 0 60px;
-    border: 10px solid var(--tertiary-color);
+
 }
 
 #intro-offer .heading,
