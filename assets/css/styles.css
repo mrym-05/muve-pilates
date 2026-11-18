@@ -39,6 +39,7 @@
 
 .section-title {
     font-size: 2.6rem;
+    color: #212529;
 }
 
 .section-head {
@@ -153,6 +154,7 @@ html {
     scroll-margin-top: 50px;
     border-top: 10px solid var(--primary-color-darker);
 }
+
 .class-eyebrow {
     font-size: 1.4rem;
 }
@@ -224,7 +226,7 @@ html {
     font-size: .8rem;
 }
 
-.cta-heading{
+.cta-heading {
     font-family: var(--heading-font);
     color: var(--secondary-color);
     font-size: 2.2rem;
@@ -384,7 +386,7 @@ html {
 }
 
 .why-us-card {
-    background:linear-gradient(to bottom, var(--secondary-color-darker), var(--primary-color-highlight));
+    background: linear-gradient(to bottom, var(--secondary-color-darker), var(--primary-color-highlight));
     color: var(--secondary-color);
 }
 
@@ -392,19 +394,36 @@ html {
     color: var(--secondary-color);
 }
 
+.why-icon {
+    width: 74px;
+    height: 74px;
+    margin: 0 auto 1.6rem;
+    display: grid;
+    place-items: center;
+    border-radius: 999px 999px 0 0;
+    background: var(--secondary-color-highlight);
+    color: var(--burgundy);
+    font-size: 1.6rem;
+    transition: background .5s var(--ease), color .5s var(--ease);
+}
+
+.why-icon i {
+    color: var(--primary-color);
+}
 
 /* reviews */
 #reviews {
     background-color: var(--secondary-color);
-    padding: 20px 0 5px;
+    padding: 20px 0 15px;
 }
 
-#reviews .heading {
-    color: var(--primary-color);
+#reviews .eyebrow {
+    font-weight: 500;
+    color: var(--primary-color-darker);
 }
 
 .rating-text {
-    color: var(--secondary-color);
+    color: var(--secondary-color-darker);
     font-weight: 500;
 }
 
@@ -415,15 +434,22 @@ html {
 }
 
 .review-content {
-    background-color: var(--secondary-color-highlight);
-    border-radius: 20px;
     padding: 10px;
-    border: 2px solid var(--primary-color-darker);
     width: 85%;
     margin: 0 auto !important;
     min-height: 250px;
     display: flex;
     flex-direction: column;
+}
+
+.quote-mark {
+    font-family: var(--heading-font);
+    font-size: 5rem;
+    line-height: 1.1;
+    color: var(--primary-color-highlight);
+    opacity: .25;
+    display: block;
+    height: 3.2rem;
 }
 
 .review-text {
