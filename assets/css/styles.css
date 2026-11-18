@@ -166,7 +166,6 @@ html {
     background-color: var(--secondary-color-highlight);
     border: 1px solid var(--line);
     border-top: 3px solid var(--line);
-    
     padding: 2rem 1rem 2rem;
     display: flex;
     flex-direction: column;
@@ -230,6 +229,7 @@ html {
     font-family: var(--heading-font);
     color: var(--secondary-color);
     font-size: 2.2rem;
+    text-shadow: 2px 2px 8px var(--primary-color-darker);
 }
 
 .timetable-btn {
@@ -270,22 +270,6 @@ html {
 /* levels */
 
 
-
-
-.levels-text {
-    color: var(--secondary-color-highlight);
-    font-family: var(--heading-font);
-    font-weight: 600;
-    font-size: 14px;
-    text-transform: uppercase;
-}
-
-
-
-#levels hr {
-    color: var(--secondary-color);
-}
-
 .accordion-item,
 .accordion-body,
 .accordion-button {
@@ -293,14 +277,14 @@ html {
 }
 
 .accordion-button {
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-color-highlight);
     color: var(--tertiary-color-highlight);
+    font-weight: 600;
     text-transform: uppercase;
 }
 
 .accordion-collapse {
     color: var(--tertiary-color) !important;
-    background-color: var(--secondary-color);
 }
 
 .accordion-button:not(.collapsed) {
@@ -308,6 +292,7 @@ html {
     color: var(--secondary-color);
 }
 
+/* accordion arrow button */
 .accordion-button:not(.collapsed)::after {
     filter: brightness(0) invert(1);
 }
@@ -315,7 +300,7 @@ html {
 .accordion-body {
     color: var(--primary-color-darker);
     font-size: 13px;
-    background-color: #FBF6F0;
+    background-color: var(--secondary-color);
 }
 
 .accordion-button::after {
