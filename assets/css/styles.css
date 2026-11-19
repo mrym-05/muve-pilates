@@ -172,6 +172,7 @@ html {
     flex-direction: column;
 }
 
+/* adds animation line above cards */
 .class-card::before {
     content: "";
     position: absolute;
@@ -179,7 +180,7 @@ html {
     left: -1px;
     right: -1px;
     height: 4px;
-    background: #a8392a;
+    background: #75251a;
     transform: scaleX(0);
     transform-origin: left;
     transition: transform .55s ease;
@@ -420,6 +421,7 @@ html {
     color: var(--secondary-color);
 }
 
+/* adds white animation line above cards */
 .why-us-card::before {
     content: "";
     position: absolute;
@@ -1060,6 +1062,30 @@ html {
 .calendar-day:hover {
     background-color: var(--secondary-color-darker);
     transform: scale(1.1);
+}
+
+/* classes available */
+.calendar-day.available {
+    background-color: #8f422f;
+    color: #fff;
+}
+
+/* fully booked */
+.calendar-day.fully-booked {
+    background-color: #52271c;
+    color: #fff;
+}
+
+/* no bookings available */
+.calendar-day.unavailable {
+    background-color: #B8B1AE;
+    color: #302824;
+}
+
+/* hover effect */
+.calendar-day:hover {
+    transform: scale(1.02);
+    filter: brightness(1.1);
 }
 
 .day-disabled {
