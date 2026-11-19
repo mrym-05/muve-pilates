@@ -554,6 +554,10 @@ html {
     position: relative;
 }
 
+.visit-card h3 {
+    font-size: 35px;
+}
+
 .visit-step {
     position: absolute;
     top: 1rem;
