@@ -829,8 +829,9 @@ html {
 /* visit section */
 #visit {
     scroll-margin-top: 70px;
-    background-color: var(--tertiary-color-highlight);
+    /* background-color: var(--tertiary-color-highlight); */
     padding: 50px 0;
+    background: radial-gradient(var(--tertiary-color-highlight), var(--secondary-color-darker));
 }
 
 #visit em {
@@ -875,9 +876,14 @@ html {
     max-width: 95%;
 }
 
+.google-map iframe {
+    outline: 2px solid rgb(228, 191, 143);
+    padding: 5px;
+}
+
 /* newsletter */
 #newsletter {
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-color-highlight);
     padding: 30px 0;
 }
 
