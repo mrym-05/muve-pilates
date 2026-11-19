@@ -866,10 +866,6 @@ html {
     color: var(--primary-color-highlight);
 }
 
-.info-card-container {
-    margin: 0 auto;
-}
-
 .google-map {
     display: flex;
     justify-content: center;
@@ -1178,7 +1174,7 @@ html {
 /* PACKAGES & MEMBERSHIPS SECTION */
 /* hero */
 .packages-hero-img {
-    min-height: 30svh;
+    min-height: 20vh;
     background-image: url("../images/packages-hero.webp");
     background-size: cover;
     background-position: center;
@@ -1195,32 +1191,48 @@ html {
     min-height: 0;
 }
 
+.package-hero-content .hero-tagline {
+    color: rgb(190, 158, 116);
+}
+
 .packages-hero-heading {
     font-family: var(--heading-font);
 }
 
-.package-hero-content>.hero-text {
-    color: var(--primary-color-darker);
+.packages-hero-heading em {
+    color: rgb(190, 158, 116);
 }
+
 
 /* intro offer */
 
 /* hero */
 .packages-hero-img {
-    min-height: 42svh;
-    background-image:
-        linear-gradient(to bottom, rgba(44, 16, 9, 0.78), rgba(81, 22, 35, 0.62)),
-        url("../images/packages-hero.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    min-height: 25vh;
     padding: 110px 0 60px;
+    background:
+        radial-gradient(ellipse at 85% -10%, rgba(107, 30, 46, .5), transparent 55%),
+        var(--primary-color-darker);
+    color: var(--secondary-color-darker);
+    position: relative;
+    overflow: hidden;
 }
+
+.packages-hero-img::before {
+    content: "";
+    position: absolute;
+    width: 520px;
+    height: 520px;
+    border-radius: 50%;
+    border: 1px solid rgba(201, 165, 126, .14);
+    left: -160px;
+    bottom: -260px;
+}
+
 
 .packages-hero-heading {
     font-family: var(--heading-font);
     color: var(--secondary-color);
-    font-size: clamp(2.4rem, 6vw, 3.8rem);
 }
 
 .package-hero-content>.hero-text {
@@ -1232,7 +1244,8 @@ html {
 
 /* intro offer */
 #offer {
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-color-highlight);
+    padding: 50px 0;
 }
 
 #offer .intro-card {
@@ -1243,23 +1256,35 @@ html {
     overflow: hidden;
 }
 
-/* inner keyline, echoing the site's framed sections */
+/* border inside intro card */
 #offer .intro-card::after {
     content: "";
     position: absolute;
     inset: 10px;
     border: 1px solid rgba(165, 142, 136, 0.45);
     border-radius: 16px;
-    pointer-events: none;
 }
 
-#offer .intro-card:hover {
-    transform: none;
-    box-shadow: none;
+/* circle pattern on intro card */
+.intro-card::before {
+  content: ""; position: absolute; width: 380px; height: 380px; border-radius: 50%;
+  border: 1px solid rgba(201, 165, 126, .18); right: -120px; top: -160px;
 }
 
 #offer .heading {
     color: var(--secondary-color);
+}
+
+#offer .offer-info {
+    color: var(--secondary-color);
+    font-family: var(--body-font);
+    font-weight: 400;
+    font-size: 0.95rem;
+}
+
+.offer-info i {
+    color: var(--secondary-color);
+    font-size: 12px;
 }
 
 .offer-label {
@@ -1287,40 +1312,15 @@ html {
     border-radius: 50px;
 }
 
-#offer .offer-info {
-    color: var(--secondary-color-darker);
-    font-family: var(--body-font);
-    font-weight: 400;
-    font-size: 0.95rem;
-}
-
-/* validity pill (shared) */
-.validity-pill {
-    display: inline-block;
-    align-self: center;
-    padding: 4px 14px;
-    font-size: 11px;
-    letter-spacing: 0.08rem;
-    text-transform: uppercase;
-    color: var(--primary-color-highlight);
-    border: 1px solid var(--secondary-color-darker);
-    border-radius: 50px;
-}
-
-.validity-pill i {
-    margin-right: 4px;
-}
-
-.validity-pill-light {
-    color: var(--secondary-color-highlight);
-    border-color: var(--secondary-color-darker);
-}
-
 /* choose your rhythm */
 #rythm {
-    background-color: var(--secondary-color-highlight);
-    border-top: 10px solid var(--secondary-color-darker);
-    border-bottom: 10px solid var(--secondary-color-darker);
+    background-color: var(--secondary-color);
+    border-top: 2px solid var(--secondary-color-darker);
+    border-bottom: 2px solid var(--secondary-color-darker);
+}
+
+#rythm .sub-heading {
+    color: var(--primary-color-highlight);
 }
 
 /* tabs */
@@ -1339,10 +1339,6 @@ html {
     background-color: transparent;
     border: 1px solid var(--primary-color-highlight);
     transition: background-color 0.2s ease, color 0.2s ease;
-}
-
-.rhythm-tabs .nav-link:hover {
-    background-color: var(--secondary-color);
 }
 
 .rhythm-tabs .nav-link.active {
@@ -1376,6 +1372,22 @@ html {
     line-height: 1;
     margin: 0.2rem 0 0.4rem;
     color: var(--primary-color);
+}
+
+/* Align pricing cards */
+#rhythm-tabs-content .rhythm-card {
+    height: 100%;
+}
+
+#rhythm-tabs-content .pricing-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Push price section to the bottom */
+#rhythm-tabs-content .pricing-card .card-price {
+    margin-top: auto;
 }
 
 .price-unit {
@@ -1512,7 +1524,8 @@ html {
 
 /* enquiry form */
 #booking-inquiry {
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-color-highlight);
+    padding: 30px 0;
 }
 
 .booking-form {
@@ -1520,6 +1533,14 @@ html {
     background-color: var(--secondary-color-highlight);
     border: 1px solid var(--secondary-color-darker);
     border-radius: 20px;
+}
+
+.form-sub-heading {
+    color: var(--primary-color);
+}
+
+.asterisk {
+    color: red;
 }
 
 .booking-form .form-label {
