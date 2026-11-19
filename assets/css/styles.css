@@ -147,7 +147,6 @@ html {
     background-color: var(--secondary-color-darker);
 }
 
-/* UPDATED */
 /* classes info */
 #classes {
     background: linear-gradient(to bottom, var(--secondary-color), var(--secondary-color-darker));
@@ -433,13 +432,42 @@ html {
     font-size: 13px;
 }
 
+/* equal-height carousel: stack every slide in one grid cell,
+   so the carousel is as tall as the longest review */
+#reviewsCarousel .carousel-inner {
+    display: grid;
+}
+
+#reviewsCarousel .carousel-inner::after {
+    display: none; /* bootstrap's clearfix would become a stray grid item */
+}
+
+#reviewsCarousel .carousel-item {
+    display: flex;
+    grid-area: 1 / 1;
+    float: none;
+    margin-right: 0;
+}
+
+/* keep hidden slides out of reach of clicks, keyboards and screen readers */
+#reviewsCarousel .carousel-item:not(.active):not(.carousel-item-next):not(.carousel-item-prev) {
+    visibility: hidden;
+}
+
 .review-content {
-    padding: 10px;
-    width: 85%;
+    flex: 0 0 85%;
     margin: 0 auto !important;
-    min-height: 250px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
+}
+
+.review {
+    flex: 1;                    /* quote area absorbs the spare height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    /* short reviews sit in the middle */
+    margin: 0;                  /* removes Bootstrap's blockquote margin */
 }
 
 .quote-mark {
@@ -453,12 +481,7 @@ html {
 }
 
 .review-text {
-    margin-top: 5px;
-    margin-bottom: 0;
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center !important;
+    margin: 5px 0 0;
 }
 
 .review-nav {
@@ -479,20 +502,28 @@ html {
 .review-btn {
     background: none;
     border: none;
-    color: #f6f2ee;
+    color: var(--primary-color-highlight);
     font-size: 1.5rem;
+}
+
+.review-btn:hover {
+    transform: scale(1.05);
+    color: var(--secondary-color-darker);
 }
 
 /* stats */
 #stats {
-    background-color: var(--secondary-color);
-    border-top: 10px solid var(--secondary-color-darker);
-    border-bottom: 10px solid var(--secondary-color-darker);
+    background:
+    radial-gradient(ellipse at 20% 0%, rgba(77, 14, 17, 0.55), transparent 60%),
+    linear-gradient(180deg, var(--tertiary-color-highlight), var(--secondary-color-darker));
+    padding: 25px 0;
+    border-top: 5px solid var(--primary-color-darker);
+    border-bottom: 5px solid var(--primary-color-darker);
 }
 
 #stats h2,
 #stats p {
-    color: var(--primary-color-highlight);
+    color: var(--secondary-color-highlight);
     font-family: var(--heading-font);
 }
 
@@ -509,29 +540,29 @@ html {
 
 /* first visit */
 #first-visit {
-    background-color: var(--primary-color-highlight);
-    border: 10px solid var(--primary-color);
+    background-color: var(--secondary-color);
+    padding: 20px 0;
 }
 
 #first-visit .heading {
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
-.instructions {
-    margin-bottom: 40px;
-    color: var(--secondary-color);
+.visit-card {
+    position: relative;
 }
 
-.instructions .h5 {
-    font-family: var(--heading-font);
-    text-transform: uppercase;
-    font-weight: 700;
+.visit-step {
+    position: absolute; 
+    top: 1rem; 
+    right: 1rem;
+    color: var(--secondary-color-darker);
 }
 
 /* socials */
 #socials {
     background-color: var(--secondary-color);
-    border: 10px solid var(--secondary-color-darker);
+    padding: 30px 0;
 }
 
 #socials p {
