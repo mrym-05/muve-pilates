@@ -208,7 +208,7 @@ html {
     font-family: var(--font-display);
     font-style: italic;
     font-size: 2.6rem;
-    color: var(--secondary-color-darker);
+    color: var(--tertiary-color-highlight);
     display: block;
     margin-bottom: 1.6rem;
 }
@@ -462,12 +462,12 @@ html {
 }
 
 .rating-text {
-    color: var(--secondary-color-darker);
+    color: var(--tertiary-color-highlight);
     font-weight: 500;
 }
 
 .rating-text-uppercase {
-    color: var(--secondary-color-darker);
+    color: var(--tertiary-color-highlight);
     text-transform: uppercase;
     font-size: 13px;
 }
