@@ -829,6 +829,10 @@ html {
     color: var(--secondary-color);
 }
 
+#class-types .class-card {
+    padding: 0.5rem 1rem;
+}
+
 .class-type-sub-heading {
     color: var(--secondary-color-darker);
     text-transform: uppercase;
@@ -845,6 +849,10 @@ html {
 
 .class-card a:hover {
     color: var(--tertiary-color);
+}
+
+.studio-class-num {
+    font-size: 1.5rem;
 }
 
 /* app */
