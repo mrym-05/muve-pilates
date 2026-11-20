@@ -454,6 +454,10 @@ html {
     color: var(--primary-color);
 }
 
+#why-us p {
+    color: var(--secondary-color);
+}
+
 /* reviews */
 #reviews {
     background-color: var(--secondary-color);
