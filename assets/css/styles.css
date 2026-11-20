@@ -753,12 +753,13 @@ html {
     color: var(--secondary-color);
     font-weight: 300;
     font-family: var(--heading-font);
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .about-hero-text {
     color: var(--secondary-color);
-    font-size: 11px;
+    font-size: 1rem;
+    font-style: italic;
 }
 
 .about-hero-content hr {
@@ -766,7 +767,7 @@ html {
 }
 
 /* internal links styling */
-#internal-links {
+#internal-navigation-section {
     padding: 20px 0;
     background-color: var(--secondary-color-highlight);
 }
@@ -876,7 +877,7 @@ html {
     font-family: var(--heading-font);
     text-transform: none;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 1.1rem;
 }
 
 .phone-mockup-img img {
