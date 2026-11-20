@@ -1228,16 +1228,59 @@ html {
 
 .fully-booked-message,
 .unavailable-message {
-    font-family: var(--font-display);
+    font-family: var(--body-font);
     font-style: italic;
     font-weight: 500;
+    color: var(--);
+}
+
+/* modal */
+/* modal */
+.modal-content {
+    margin-top: 50%;
+}
+
+.modal-title {
+    color: var(--primary-color-highlight);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.modal-input {
+    font-weight: 600;
+    color: #2c1009;
+}
+
+.modal-cancel {
+    background-color: rgb(153, 52, 52);
+    color: white;
+}
+
+.modal-cancel:hover {
+    background-color: rgb(179, 70, 70);
+    color: white;
+}
+
+.modal-confirm {
+    background-color: rgb(70, 105, 72);
+    color: white;
+}
+
+.modal-confirm:hover {
+    background-color: rgb(101, 141, 103);
+    color: white;
+}
+
+.modal-cancel:hover,
+.modal-confirm:hover {
+    transform: scale(1.1);
 }
 
 
 /* PACKAGES & MEMBERSHIPS SECTION */
 /* hero */
 .packages-hero-img {
-    min-height: 20vh;
+    min-height: 45vh;
     background-image: url("../images/packages-hero.webp");
     background-size: cover;
     background-position: center;
