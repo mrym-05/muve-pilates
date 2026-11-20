@@ -102,9 +102,9 @@
 
                     <!-- LEFT COLUMN -->
 
-                    <div class="col-12 col-md-5">
+                    <div class="col-12 col-md-6">
 
-                        <h2 class="heading section-title text-center">
+                        <h2 class="heading section-title text-center pt-3">
                             December <em>2026</em>
                         </h2>
 
@@ -119,13 +119,13 @@
                                         <thead>
 
                                             <tr>
-                                                <th>Mon</th>
-                                                <th>Tue</th>
-                                                <th>Wed</th>
-                                                <th>Thu</th>
-                                                <th>Fri</th>
-                                                <th>Sat</th>
-                                                <th>Sun</th>
+                                                <th class="pb-3">MON</th>
+                                                <th class="pb-3">TUE</th>
+                                                <th class="pb-3">WED</th>
+                                                <th class="pb-3">THU</th>
+                                                <th class="pb-3">FRI</th>
+                                                <th class="pb-3">SAT</th>
+                                                <th class="pb-3">SUN</th>
                                             </tr>
 
                                         </thead>
@@ -133,23 +133,23 @@
                                         <tbody>
 
                                             <tr>
-                                                <td><button class="calendar-day day-disabled" disabled>30</button></td>
-                                                <td><button class="calendar-day available"
+                                                <td><button class="calendar-day day-disabled" disabled mt-3>30</button></td>
+                                                <td><button class="calendar-day available mt-3"
                                                         data-date="2026-12-01">1</button>
                                                 </td>
-                                                <td><button class="calendar-day fully-booked"
+                                                <td><button class="calendar-day fully-booked mt-3"
                                                         data-date="2026-12-02">2</button>
                                                 </td>
-                                                <td><button class="calendar-day available"
+                                                <td><button class="calendar-day available mt-3"
                                                         data-date="2026-12-03">3</button>
                                                 </td>
-                                                <td><button class="calendar-day available"
+                                                <td><button class="calendar-day available mt-3"
                                                         data-date="2026-12-04">4</button>
                                                 </td>
-                                                <td><button class="calendar-day unavailable"
+                                                <td><button class="calendar-day unavailable mt-3"
                                                         data-date="2026-12-05">5</button>
                                                 </td>
-                                                <td><button class="calendar-day unavailable"
+                                                <td><button class="calendar-day unavailable mt-3"
                                                         data-date="2026-12-06">6</button>
                                                 </td>
                                             </tr>
@@ -244,6 +244,12 @@
 
                                     </table>
                                 </div>
+
+                                <!-- key -->
+                                <ul class="calendar-legend list-unstyled">
+                                    <li><span class="legend-dot legend-available"></span> Available</li>
+                                    <li><span class="legend-dot legend-booked"></span> Fully booked</li>
+                                </ul>
                             </div>
                         </div>
 
@@ -253,17 +259,17 @@
 
                     <!-- RIGHT COLUMN -->
 
-                    <div class="col-12 col-md-7">
+                    <div class="col-12 col-md-6">
 
                         <!-- SELECTED DATE -->
 
                         <!-- getting text center aligned on y axis -->
-                        <div class="schedule-panel text-center">
+                        <div class="schedule-panel mt-5 text-center">
 
                             <div id="selected-date" class="selected-date-heading text-center">
 
-                                <h3 class="mt-4 fw-bold">
-                                    Select a date to view available classes
+                                <h3 class="mt-4">
+                                    Select A Date To View Available Classes
                                 </h3>
 
                             </div>
@@ -302,7 +308,7 @@
 
                                                 <button type="button" data-bs-toggle="modal"
                                                     data-bs-target="#bookingModal" class="book-now-btn">
-                                                    Request Booking
+                                                    REQUEST BOOKING
                                                 </button>
 
                                             </td>
@@ -315,7 +321,7 @@
 
                                                 <button type="button" data-bs-toggle="modal"
                                                     data-bs-target="#bookingModal" class="book-now-btn">
-                                                    Request Booking
+                                                    REQUEST BOOKING
                                                 </button>
 
                                             </td>
@@ -328,7 +334,7 @@
 
                                                 <button type="button" data-bs-toggle="modal"
                                                     data-bs-target="#bookingModal" class="book-now-btn">
-                                                    Request Booking
+                                                    REQUEST BOOKING
                                                 </button>
 
                                             </td>
@@ -341,7 +347,7 @@
 
                                                 <button type="button" data-bs-toggle="modal"
                                                     data-bs-target="#bookingModal" class="book-now-btn">
-                                                    Request Booking
+                                                    REQUEST BOOKING
                                                 </button>
 
                                             </td>
@@ -357,7 +363,7 @@
 
                             <div id="fully-booked">
 
-                                <p class="fully-booked-message fw-bold">
+                                <p class="fully-booked-message">
                                     Unfortunately all classes for this date have been fully booked.
                                 </p>
 
@@ -367,7 +373,7 @@
 
                             <div id="unavailable-dates">
 
-                                <p class="unavailable-message fw-bold">
+                                <p class="unavailable-message">
                                     No classes are schedules for this day.
                                 </p>
 
@@ -495,7 +501,7 @@
 
             <div class="container">
 
-                <div class="row g-3 text-center mb-4">
+                <div class="row g-4 text-center mb-4">
 
                     <div class="col-12">
 
@@ -505,42 +511,53 @@
 
                     <div class="col-12 col-md-6 col-lg-3">
 
-                        <h2 class="before-class-heading fw-bold"><i class="fa-solid fa-clipboard-list"></i> Arrive early
-                        </h2>
-                        <p class="before-class-text">Arrive a little early to get settled (and if you're new.. meet your
-                            instructor before class!)</p>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="prep-item reveal">
+                                <h3 class="before-class-heading fw-bold"><i class="fa-solid fa-clock"></i> Arrive early</h3>
+                                <p class="before-class-text">Arrive a little early to get settled (and if you're new…
+                                    meet your instructor before class!)</p>
+                            </div>
+                        </div>
 
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-3">
 
-                        <h2 class="before-class-heading fw-bold"><i class="fa-solid fa-clipboard-list"></i> Grip socks
-                        </h2>
-                        <p class="before-class-text">Grip socks are required help provide stability and safety during
-                            your
-                            reformer session.</p>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="prep-item reveal">
+                                <h3 class="before-class-heading fw-bold"><i class="fa-solid fa-socks"></i> Grip socks
+                                </h3>
+                                <p class="before-class-text">Grip socks are required to help provide stability and
+                                    safety during your reformer session.</p>
+                            </div>
+                        </div>
 
                     </div>
 
 
                     <div class="col-12 col-md-6 col-lg-3">
 
-                        <h2 class="before-class-heading fw-bold"><i class="fa-solid fa-clipboard-list"></i> Stay
-                            hydrated
-                        </h2>
-                        <p class="before-class-text">Bring a water bottle and stay hydrated before and after your class.
-                        </p>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="prep-item reveal">
+                                <h3 class="before-class-heading fw-bold"><i class="fa-solid fa-bottle-water"></i> Stay hydrated
+                                </h3>
+                                <p class="before-class-text">Bring a water bottle and stay hydrated before and after
+                                    your class.</p>
+                            </div>
+                        </div>
 
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-3">
 
-                        <h2 class="before-class-heading fw-bold"><i class="fa-solid fa-clipboard-list"></i> Any
-                            injuries?
-                        </h2>
-                        <p class="before-class-text">Please inform your instructor of any injuries or concerns before
-                            your
-                            session starts.</p>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="prep-item reveal">
+                                <h3 class="before-class-heading fw-bold"><i class="fa-solid fa-briefcase-medical"></i> Any injuries?
+                                </h3>
+                                <p class="before-class-text">Please inform your instructor of any injuries or concerns
+                                    before your session starts.</p>
+                            </div>
+                        </div>
 
                     </div>
 
@@ -558,7 +575,7 @@
 
                     <div class="col-12 text-center">
 
-                        <h2 class="heading section-title">Not Ready To Book Yet?</h2>
+                        <h2 class="heading section-title">Not Ready To Book <em>Yet?</em></h2>
 
                         <p class="levels-text">
                             Explore our membership options or
