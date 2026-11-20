@@ -709,7 +709,7 @@ html {
 /* STUDIO */
 .about-hero-img {
     min-height: 45vh;
-    background-image: url("../images/about-hero.webp");
+    background-image: url("../images/studio-hero.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1004,6 +1004,12 @@ html {
 .schedule-hero-content {
     max-width: 850px;
     margin: 0 auto;
+    backdrop-filter: blur(12px);
+    border-radius: 8px;
+    border: 2px solid rgb(31, 4, 4);
+    padding: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .schedule-eyebrow {
@@ -1018,7 +1024,7 @@ html {
 
 .schedule-hero-heading {
     font-family: var(--heading-font);
-    font-size: clamp(3rem, 6vw, 5rem);
+    font-size: 41.6px;
     font-weight: 700;
     line-height: 1;
     color: var(--secondary-color);
@@ -1363,6 +1369,15 @@ html {
     min-height: 0;
 }
 
+.package-hero-content {
+    backdrop-filter: blur(12px);
+    border-radius: 8px;
+    border: 2px solid rgb(31, 4, 4);
+    padding: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 .package-hero-content .hero-tagline {
     color: rgb(190, 158, 116);
 }
@@ -1688,6 +1703,15 @@ html {
     padding: 70px 0 10px;
     display: grid;
     place-items: center;
+}
+
+.faq-content {
+    backdrop-filter: blur(12px);
+    border-radius: 8px;
+    border: 2px solid rgb(31, 4, 4);
+    padding: 0 2rem 2rem 2rem !important;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .faq-hero-eyebrow {
