@@ -63,34 +63,36 @@
 
     <main class="mt-0 flex-grow-1">
 
+        <!-- hero image -->
         <section class="faq-hero text-center py-5">
 
-            <div class="container py-4 py-md-5">
-                <p class="eyebrow mb-3">— HERE TO HELP —</p>
-                <h1 class="display-5 mb-3 section-title">Frequently Asked <em>Questions</em></h1>
-                <p class="mx-auto mb-0 hero-description">Everything you need to know before stepping into the studio.
+            <div class="container py-4 px-0 mx-auto">
+                <p class="faq-hero-eyebrow mt-4 mb-0 fw-bold">— HERE TO HELP —</p>
+                <h1 class="mb-1 section-title heading faq-hero-title">Frequently Asked <em>Questions</em></h1>
+                <p class="mb-0 faq-hero-description"><em>Everything you need to know before stepping into the
+                        studio.</em>
                 </p>
             </div>
 
         </section>
 
-        <section class="py-5">
+        <section id="faqs-page">
 
-            <div class="container py-lg-4">
+            <div class="container py-4">
 
-                <div class="row g-4 g-lg-5">
+                <div class="row g-4">
 
                     <!-- internal links for easier navigation in faqs -->
-                    <aside class="col-12 col-lg-3" aria-label="FAQ categories">
+                    <aside class="col-12 col-lg-3 mt-5" aria-label="FAQ categories">
 
                         <div class="category-panel p-3 p-sm-4">
-                            <p class="eyebrow text-uppercase mb-3">Browse by topic</p>
-                            <nav class="d-flex flex-wrap flex-lg-column gap-2" aria-label="FAQ topics">
-                                <a class="category-link" href="#getting-started">Getting started</a>
-                                <a class="category-link" href="#classes">Our classes</a>
-                                <a class="category-link" href="#packages">Packages &amp; memberships</a>
-                                <a class="category-link" href="#bookings">Bookings &amp; cancellations</a>
-                                <a class="category-link" href="#studio">Studio essentials</a>
+                            <p class="category-link-heading text-uppercase mb-3 fw-bold">Browse by topic</p>
+                            <nav class="d-flex flex-wrap flex-lg-column gap-2">
+                                <a class="category-link fw-bold" href="#getting-started">Getting Started</a>
+                                <a class="category-link fw-bold" href="#our-classes">Our Classes</a>
+                                <a class="category-link fw-bold" href="#packages">Packages & Memberships</a>
+                                <a class="category-link fw-bold" href="#bookings">Bookings & Cancellations</a>
+                                <a class="category-link fw-bold" href="#studio">Studio Essentials</a>
                             </nav>
                         </div>
 
@@ -99,15 +101,16 @@
                     <!-- accordion title -->
                     <div class="col-12 col-lg-9">
                         <div class="mb-4 mb-md-5">
-                            <p class="eyebrow mb-2">THE LITTLE DETAILS</p>
-                            <h2 id="faq-list-title" class="section-title">Good to <em>know.</em></h2>
-                            <p class="text-muted mb-0">Select a question to reveal the answer.</p>
+                            <p class="eyebrow mb-2">— THE LITTLE DETAILS</p>
+                            <h2 id="faq-list-title" class="heading section-title">Good to <em>know.</em></h2>
                         </div>
 
                         <!-- faqs accordion -->
+                        <!-- getting started -->
                         <section id="getting-started" class="faq-section mb-5">
-                            <h3 id="getting-heading" class="faq-heading mb-3">Getting started</h3>
+                            <h3 id="getting-heading" class="faq-heading mb-3">Getting Started</h3>
                             <div class="accordion" id="gettingAccordion">
+
                                 <div class="accordion-item">
                                     <h4 class="accordion-header"><button class="accordion-button collapsed"
                                             type="button" data-bs-toggle="collapse" data-bs-target="#startOne"
@@ -118,26 +121,28 @@
                                         <div class="accordion-body">Absolutely! Whether you're brand new or returning to
                                             Pilates, you're welcome at Müve. If you're unsure which class to choose,
                                             have a look at our classes listed on the website, or get in touch with our
-                                             team before booking.</div>
+                                            team before booking.</div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
-                                    <h4 class="accordion-header"><button class="accordion-button" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#startTwo" aria-expanded="true"
+                                    <h4 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#startTwo" aria-expanded="false"
                                             aria-controls="startTwo">Do you have an introductory offer?</button></h4>
-                                    <div id="startTwo" class="accordion-collapse collapse show"
+                                    <div id="startTwo" class="accordion-collapse collapse"
                                         data-bs-parent="#gettingAccordion">
                                         <div class="accordion-body">Yes! New clients can enjoy 3 introductory classes
                                             for £50. Class credits are valid for 30 days. See our <a
-                                                href="packages-and-memberships.html">Packages & Memberships</a> page for details.
+                                                href="packages-and-memberships.html">Packages & Memberships</a> page for
+                                            details.
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </section>
 
-                        <section id="classes" class="faq-section mb-5" aria-labelledby="classes-heading">
-                            <h3 id="classes-heading" class="faq-heading mb-3">Our classes</h3>
+                        <!-- our classes -->
+                        <section id="our-classes" class="faq-section mb-5" aria-labelledby="classes-heading">
+                            <h3 id="classes-heading" class="faq-heading mb-3">Our Classes</h3>
                             <div class="accordion" id="classesAccordion">
                                 <div class="accordion-item">
                                     <h4 class="accordion-header"><button class="accordion-button collapsed"
@@ -146,30 +151,36 @@
                                             do you offer?</button></h4>
                                     <div id="classOne" class="accordion-collapse collapse"
                                         data-bs-parent="#classesAccordion">
-                                        <div class="accordion-body">We offer a range of classes that include, reformer pilates, 
-                                            mat pilates, jumpboard, and strength pilates. These classes are designed to build
+                                        <div class="accordion-body">We offer a range of classes that include, reformer
+                                            pilates,
+                                            mat pilates, jumpboard, and strength pilates. These classes are designed to
+                                            build
                                             strength, improve mobility and help you feel your best.
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
                                     <h4 class="accordion-header"><button class="accordion-button collapsed"
                                             type="button" data-bs-toggle="collapse" data-bs-target="#classTwo"
-                                            aria-expanded="false" aria-controls="classTwo">Do you accept walk-ins without prior 
-                                        booking?</button></h4>
+                                            aria-expanded="false" aria-controls="classTwo">Do you accept walk-ins
+                                            without prior
+                                            booking?</button></h4>
                                     <div id="classTwo" class="accordion-collapse collapse"
                                         data-bs-parent="#classesAccordion">
-                                        <div class="accordion-body"> We're unable to accept walk-ins, all classes must be booked online in 
-                                            advance. Same day bookings are welcome, with the <b>latest booking available up to 15 minutes 
+                                        <div class="accordion-body"> We're unable to accept walk-ins, all classes
+                                            must be booked online in
+                                            advance. Same day bookings are welcome, with the <b>latest booking
+                                                available up to 15 minutes
                                                 before the session start time</b>.
-                                            </b>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </section>
 
+                        <!-- packahes and memberships -->
                         <section id="packages" class="faq-section mb-5" aria-labelledby="packages-heading">
-                            <h3 id="packages-heading" class="faq-heading mb-3">Packages & memberships</h3>
+                            <h3 id="packages-heading" class="faq-heading mb-3">Packages & Memberships</h3>
                             <div class="accordion" id="packagesAccordion">
                                 <div class="accordion-item">
                                     <h4 class="accordion-header"><button class="accordion-button collapsed"
@@ -179,7 +190,8 @@
                                     <div id="packageOne" class="accordion-collapse collapse"
                                         data-bs-parent="#packagesAccordion">
                                         <div class="accordion-body">You'll find the current options on our <a
-                                                href="packages-and-memberships.html">Packages & Memberships</a> page.</div>
+                                                href="packages-and-memberships.html">Packages & Memberships</a> page.
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
@@ -189,16 +201,18 @@
                                             expire?</button></h4>
                                     <div id="packageTwo" class="accordion-collapse collapse"
                                         data-bs-parent="#packagesAccordion">
-                                        <div class="accordion-body">Yes, each of our packages have their own expiry date. Please 
-                                            ensure to check these before requesting a purchase. 
+                                        <div class="accordion-body">Yes, each of our packages have their own expiry
+                                            date. Please
+                                            ensure to check these before requesting a purchase.
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </section>
 
+                        <!-- Bookings and Cancellations -->
                         <section id="bookings" class="faq-section mb-5" aria-labelledby="bookings-heading">
-                            <h3 id="bookings-heading" class="faq-heading mb-3">Bookings &amp; cancellations</h3>
+                            <h3 id="bookings-heading" class="faq-heading mb-3">Bookings & Cancellations</h3>
                             <div class="accordion" id="bookingsAccordion">
                                 <div class="accordion-item">
                                     <h4 class="accordion-header"><button class="accordion-button collapsed"
@@ -208,7 +222,8 @@
                                     <div id="bookingOne" class="accordion-collapse collapse"
                                         data-bs-parent="#bookingsAccordion">
                                         <div class="accordion-body">Head to our <a href="schedule.html">Schedule</a> to
-                                            view classes and make a booking request. We will get back to you shortly.</div>
+                                            view classes and make a booking request. We will get back to you shortly.
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
@@ -218,13 +233,18 @@
                                             policy?</button></h4>
                                     <div id="bookingTwo" class="accordion-collapse collapse"
                                         data-bs-parent="#bookingsAccordion">
-                                        <div class="accordion-body">You can cancel without incurring any charge or loss of credit 
-                                            if done prior than 24 hours of the booked session. We understand that things can come up, 
-                                            and we kindly ask that you give us at least <b>24 hours'</b> notice if you're unable to attend.
-                                            <br>Cancellations made after and within 24 hours of the class start time, will be charged as follows:
+                                        <div class="accordion-body">You can cancel without incurring any charge or loss
+                                            of credit
+                                            if done prior than 24 hours of the booked session. We understand that things
+                                            can come up,
+                                            and we kindly ask that you give us at least <b>24 hours'</b> notice if
+                                            you're unable to attend.
+                                            <br>Cancellations made after and within 24 hours of the class start time,
+                                            will be charged as follows:
                                             <ul>
                                                 <li><b>Class Pass holders</b> will lose one class credit</li>
-                                                <li><b>Members on unlimited plans</b> will be charged a <b>£17 no-show-fee</b></li>
+                                                <li><b>Members on unlimited plans</b> will be charged a <b>£17
+                                                        no-show-fee</b></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -232,8 +252,9 @@
                             </div>
                         </section>
 
+                        <!-- studio essentials -->
                         <section id="studio" class="faq-section mb-4" aria-labelledby="studio-heading">
-                            <h3 id="studio-heading" class="faq-heading mb-3">Studio essentials</h3>
+                            <h3 id="studio-heading" class="faq-heading mb-3">Studio Essentials</h3>
                             <div class="accordion" id="studioAccordion">
                                 <div class="accordion-item">
                                     <h4 class="accordion-header"><button class="accordion-button collapsed"
@@ -242,9 +263,12 @@
                                             class?</button></h4>
                                     <div id="studioOne" class="accordion-collapse collapse"
                                         data-bs-parent="#studioAccordion">
-                                        <div class="accordion-body">Wear comfortable, form-fitting activewear that allows you 
-                                            to move freely. This is a ladies only studio so we want you to be as comfortable as 
-                                            possible. <b>Grip socks are a must for safety and hygiene</b> and if you don't have any, 
+                                        <div class="accordion-body">Wear comfortable, form-fitting activewear that
+                                            allows you
+                                            to move freely. This is a ladies only studio so we want you to be as
+                                            comfortable as
+                                            possible. <b>Grip socks are a must for safety and hygiene</b> and if you
+                                            don't have any,
                                             they can be purchased in the studio if needed.</div>
                                     </div>
                                 </div>
@@ -255,7 +279,8 @@
                                             located?</button></h4>
                                     <div id="studioTwo" class="accordion-collapse collapse"
                                         data-bs-parent="#studioAccordion">
-                                        <div class="accordion-body">Visit our <a href="studio.html">Studio</a> or <a href="contact.html">Contact</a> page
+                                        <div class="accordion-body">Visit our <a href="studio.html">Studio</a> or <a
+                                                href="contact.html">Contact</a> page
                                             for the studio's location.</div>
                                     </div>
                                 </div>
@@ -266,7 +291,21 @@
             </div>
         </section>
 
-        
+        <section id="faqs-contact">
+            <div class="container pb-5">
+                <div class="contact-cta rounded-4 p-4 p-md-5">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-12 col-md-8">
+                            <p class="eyebrow mb-2">— WE'RE HERE FOR YOU</p>
+                            <h2 class="heading section-title mb-2">Still have <em>questions?</em></h2>
+                            <p class="mb-0">We'd love to help. Get in touch with our team.</p>
+                        </div>
+                        <div class="col-12 col-md-4 text-md-end"><a class="btn btn-muve px-4 py-3"
+                                href="packages-and-memberships.html#contact">CONTACT US</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 

@@ -1070,6 +1070,7 @@ html {
     padding: 1.8rem 0 1.4rem;
     max-width: 100%;
 }
+
 /* makes table sit in the center */
 .calendar-table {
     width: 100%;
@@ -1127,11 +1128,12 @@ html {
 }
 
 /* the day you just tapped */
-.calendar-day:not(.day-disabled):focus { 
+.calendar-day:not(.day-disabled):focus {
     background: var(--secondary-color);
     border-color: var(--primary-color);
     color: var(--tertiary-color);
 }
+
 /* colour key */
 .calendar-legend {
     display: flex;
@@ -1174,7 +1176,8 @@ html {
     justify-content: center;
 }
 
-.schedule-panel::before { /* panel decoration */
+.schedule-panel::before {
+    /* panel decoration */
     content: "";
     position: absolute;
     inset: 14px;
@@ -1212,7 +1215,7 @@ html {
     border-bottom: 1px solid var(--primary-color-highlight);
 }
 
- .available-classes-table tbody tr:hover {
+.available-classes-table tbody tr:hover {
     background: rgba(255, 253, 249, .6);
 }
 
@@ -1225,7 +1228,7 @@ html {
     font-size: .64rem;
     font-weight: 400;
     letter-spacing: .1em;
-    padding: 5px 10px;    
+    padding: 5px 10px;
 }
 
 .book-now-btn:hover,
@@ -1287,9 +1290,9 @@ html {
 #class-prep {
     background-color: var(--primary-color-highlight);
     padding: 50px 0;
-    background: 
-    radial-gradient(ellipse at 20% 0%, rgba(77, 14, 17, 0.55), transparent 60%),
-    linear-gradient(180deg, var(--tertiary-color-highlight), var(--secondary-color-darker));
+    background:
+        radial-gradient(ellipse at 20% 0%, rgba(77, 14, 17, 0.55), transparent 60%),
+        linear-gradient(180deg, var(--tertiary-color-highlight), var(--secondary-color-darker));
 }
 
 #class-prep .section-title {
@@ -1309,6 +1312,7 @@ html {
 .before-class-text {
     color: white;
 }
+
 /* not ready to book section */
 #schedule-cta {
     background-color: var(--secondary-color-highlight);
@@ -1370,32 +1374,6 @@ html {
 .packages-hero-heading em {
     color: rgb(190, 158, 116);
 }
-
-
-/* intro offer */
-/* hero */
-.packages-hero-img {
-    min-height: 25vh;
-    padding: 110px 0 60px;
-    background:
-        radial-gradient(ellipse at 85% -10%, rgba(107, 30, 46, .5), transparent 55%),
-        var(--primary-color-darker);
-    color: var(--secondary-color-darker);
-    position: relative;
-    overflow: hidden;
-}
-
-.packages-hero-img::before {
-    content: "";
-    position: absolute;
-    width: 520px;
-    height: 520px;
-    border-radius: 50%;
-    border: 1px solid rgba(201, 165, 126, .14);
-    left: -160px;
-    bottom: -260px;
-}
-
 
 .packages-hero-heading {
     font-family: var(--heading-font);
@@ -1695,4 +1673,237 @@ html {
 #booking-inquiry .button {
     background-color: var(--primary-color);
     color: var(--secondary-color);
+}
+
+/* FAQS PAGE */
+.faq-hero {
+    height: 45vh;
+    background:
+        url("../images/faqs-hero.webp") center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 140px 20px 65px;
+    /* account for fixed navbar */
+    padding: 70px 0 10px;
+    display: grid;
+    place-items: center;
+}
+
+.faq-hero-eyebrow {
+    color: var(--secondary-color);
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+.faq-hero-title,
+.faq-hero-description {
+    color: var(--secondary-color);
+}
+
+.faq-hero-title em {
+    color: rgb(190, 158, 116);
+}
+
+/* page content */
+#faqs-page {
+    background: linear-gradient(to bottom, var(--secondary-color-highlight)60%, var(--secondary-color-darker));
+}
+
+/* internal links */
+#faqs-page .category-panel {
+    background: linear-gradient(145deg, var(--primary-color), var(--primary-color-darker));
+    border-radius: 20px;
+    box-shadow: 0 12px 32px rgba(44, 16, 9, .12);
+}
+
+#faqs-page .category-link-heading {
+color: var(--secondary-color);
+font-family: var(--body-font);
+font-size: .72rem;
+letter-spacing: .16em;
+}
+
+#faqs-page .category-link {
+    padding: .7rem .9rem;
+    border: 1px solid var(--secondary-color-darker);
+    border-radius: 12px;
+    color: var(--secondary-color);
+    font-family: var(--body-font);
+    font-size: .78rem;
+    text-decoration: none;
+}
+
+#faqs-page .category-link:hover {
+    background: var(--secondary-color-highlight);
+    border-color: var(--secondary-color-highlight);
+    color: var(--primary-color-darker);
+}
+
+/* section headings and anchor spacing */
+#faqs-page .faq-section {
+    scroll-margin-top: 100px;
+}
+
+#faqs-page .faq-heading {
+    color: var(--primary-color-highlight);
+    font-family: var(--heading-font);
+    font-size: clamp(2rem, 3vw, 2.4rem);
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+/* FAQ-only Bootstrap accordion overrides */
+#faqs-page .accordion {
+    --bs-accordion-border-width: 0;
+    --bs-accordion-bg: transparent;
+    display: grid;
+    gap: .7rem;
+    min-width: 0;
+}
+
+#faqs-page .accordion-item {
+    overflow: hidden;
+    min-width: 0;
+    border: 1px solid var(--line);
+    border-radius: 13px !important;
+    background: #fbf8f5;
+    box-shadow: 0 3px 12px rgba(44, 16, 9, .035);
+}
+
+#faqs-page .accordion-header {
+    margin: 0;
+}
+
+#faqs-page .accordion-button {
+    min-width: 0;
+    padding: 1rem 1.1rem;
+    border-radius: 0 !important;
+    background: #fbf8f5;
+    color: var(--tertiary-color);
+    font-family: var(--body-font);
+    font-size: clamp(.79rem, 1.3vw, .92rem);
+    font-weight: 600;
+    line-height: 1.55;
+    text-align: left;
+    text-transform: none;
+    box-shadow: none;
+    overflow-wrap: anywhere;
+    gap: .7rem;
+}
+
+#faqs-page .accordion-button:hover {
+    background: var(--secondary-color-highlight);
+}
+
+#faqs-page .accordion-button:not(.collapsed) {
+    background: linear-gradient(105deg, #f0e1dc, var(--secondary-color-highlight));
+    color: var(--primary-color);
+    box-shadow: none;
+}
+
+#faqs-page .accordion-button::after {
+    flex-shrink: 0;
+    margin-left: auto;
+    filter: none;
+    /* Recolour Bootstrap's SVG arrow using a CSS filter */
+    filter: brightness(0) saturate(100%) invert(16%) sepia(31%) saturate(1376%) hue-rotate(325deg) brightness(92%) contrast(97%);
+}
+
+#faqs-page .accordion-button:not(.collapsed)::after {
+    filter: brightness(0) saturate(100%) invert(16%) sepia(31%) saturate(1376%) hue-rotate(325deg) brightness(92%) contrast(97%);
+}
+
+#faqs-page .accordion-body {
+    padding: 1rem 1.1rem 1.25rem;
+    border-top: 1px solid var(--line);
+    border-radius: 0 !important;
+    background: #fbf8f5;
+    color: var(--tertiary-color-highlight);
+    font-family: var(--body-font);
+    font-size: .88rem !important;
+    font-weight: 400;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+#faqs-page .accordion-body a {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration-color: #b88968;
+    text-underline-offset: 3px;
+}
+
+#faqs-page .accordion-body a:hover {
+    color: var(--primary-color-highlight);
+}
+
+#faqs-page .accordion-body ul {
+    padding-left: 1.3rem;
+    margin-top: .75rem;
+    margin-bottom: 0;
+}
+
+#faqs-page .accordion-body li+li {
+    margin-top: .35rem;
+}
+
+/* contact section */
+#faqs-contact {
+    background-color: var(--secondary-color-darker);
+    padding-top: 3rem;
+}
+
+.contact-cta {
+    position: relative;
+    background: linear-gradient(
+        135deg,
+        var(--primary-color) 0%,
+        var(--primary-color-highlight) 55%,
+        var(--primary-color-darker) 100%
+    );
+    box-shadow: 0 12px 30px rgba(44, 16, 9, 0.15);
+}
+
+.contact-cta .eyebrow {
+    color: var(--secondary-color-darker);
+    font-size: 0.7rem;
+}
+
+.contact-cta .section-title {
+    font-family: var(--heading-font);
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--secondary-color);
+}
+
+.contact-cta .section-title em {
+    color: rgb(190, 158, 116);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.contact-cta p:not(.eyebrow) {
+    color: var(--secondary-color-highlight);
+    font-family: var(--body-font);
+    font-size: 0.9rem;
+}
+
+/* button */
+.contact-cta .btn-muve {
+    background-color: var(--secondary-color);
+    color: var(--primary-color-darker);
+    border-radius: 4px;
+    font-family: var(--body-font);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;    
+}
+
+.contact-cta .btn-muve:hover {
+    background-color: rgb(190, 158, 116);
+    border-color: rgb(190, 158, 116);
+    color: var(--primary-color-darker);
+    transform: translateY(-2px);
 }
