@@ -648,7 +648,7 @@ html {
 
 .footer-text {
     font-family: var(--heading-font);
-    color: var(--secondary-color-darker);
+    color: var(--secondary-color);
 }
 
 .footer hr {
