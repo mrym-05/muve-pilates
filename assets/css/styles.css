@@ -1235,7 +1235,6 @@ html {
 }
 
 /* modal */
-/* modal */
 .modal-content {
     margin-top: 50%;
 }
@@ -1276,11 +1275,66 @@ html {
     transform: scale(1.1);
 }
 
+/* before your class section */
+#class-prep {
+    background-color: var(--primary-color-highlight);
+    padding: 50px 0;
+    background: 
+    radial-gradient(ellipse at 20% 0%, rgba(77, 14, 17, 0.55), transparent 60%),
+    linear-gradient(180deg, var(--tertiary-color-highlight), var(--secondary-color-darker));
+}
 
-/* PACKAGES & MEMBERSHIPS SECTION */
+#class-prep .section-title {
+    color: var(--secondary-color);
+}
+
+#class-prep em {
+    color: var(--secondary-color-highlight);
+}
+
+.before-class-heading {
+    color: var(--secondary-color-highlight);
+    font-family: var(--heading-font);
+    font-size: 1.8rem;
+}
+
+.before-class-text {
+    color: white;
+}
+/* not ready to book section */
+#schedule-cta {
+    background-color: var(--secondary-color-highlight);
+    padding: 50px 0;
+}
+
+.schedule-packages-cta {
+    background-color: var(--primary-color);
+    border-radius: 0;
+    color: white;
+    font-weight: 600;
+}
+
+.schedule-packages-cta:hover {
+    background-color: var(--tertiary-color-highlight);
+    color: white;
+}
+
+.schedule-contact-cta {
+    background-color: var(--tertiary-color-highlight);
+    border-radius: 0;
+    color: white;
+    font-weight: 600;
+}
+
+.schedule-contact-cta:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* PACKAGES & MEMBERSHIPS */
 /* hero */
 .packages-hero-img {
-    min-height: 45vh;
+    min-height: 45vh !important;
     background-image: url("../images/packages-hero.webp");
     background-size: cover;
     background-position: center;
