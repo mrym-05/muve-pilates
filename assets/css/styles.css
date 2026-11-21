@@ -408,6 +408,7 @@ html {
 
 #why-us .eyebrow {
     font-size: 1.4rem;
+    color: var(--tertiary-color-highlight);
 }
 
 .booking-btn {

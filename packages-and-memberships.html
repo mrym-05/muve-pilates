@@ -92,6 +92,7 @@
 
             <div class="container py-5">
 
+                <!-- bootstrap card -->
                 <div class="card intro-card">
                     <div class="card-body p-4 p-lg-5">
 
@@ -146,22 +147,24 @@
                     </div>
 
 
-                    <!-- bootstrap tabs & cards -->
+                    <!-- custom bootstrap tabs & cards -->
                     <div class="col-12">
 
                         <ul class="nav nav-pills rhythm-tabs justify-content-center mb-4" id="rhythmTabs"
                             role="tablist">
 
+                            <!-- packages tab -->
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active" id="packages-tab" data-bs-toggle="pill"
                                     data-bs-target="#packages" type="button" role="tab" aria-controls="packages"
-                                    aria-selected="true">
+                                    aria-selected="true"> <!-- auto selected when page loads -->
 
                                     PACKAGES
 
                                 </button>
                             </li>
 
+                            <!-- membrships tab -->
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="memberships-tab" data-bs-toggle="pill"
                                     data-bs-target="#memberships" type="button" role="tab" aria-controls="memberships"
@@ -172,6 +175,7 @@
                                 </button>
                             </li>
 
+                            <!-- gift cards tabs -->
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="giftcards-tab" data-bs-toggle="pill"
                                     data-bs-target="#giftcards" type="button" role="tab" aria-controls="giftcards"
@@ -185,7 +189,7 @@
                         </ul>
 
 
-                        <!-- tab content -->
+                        <!-- tab content / bootstrap cards -->
                         <div class="tab-content" id="rhythm-tabs-content">
 
 
@@ -196,7 +200,7 @@
 
                                 <div class="row g-3">
 
-                                    <!-- Single Class -->
+                                    <!-- single class -->
                                     <div class="col-12 col-sm-6 col-lg-3">
                                         <div class="card h-100 rhythm-card">
                                             <div class="card-body pricing-card text-center p-4">
@@ -216,7 +220,7 @@
                                         </div>
                                     </div>
 
-                                    <!-- 5 Classes -->
+                                    <!-- 5 classes -->
                                     <div class="col-12 col-sm-6 col-lg-3">
                                         <div class="card h-100 rhythm-card">
                                             <div class="card-body pricing-card text-center p-4">
@@ -239,7 +243,7 @@
                                         </div>
                                     </div>
 
-                                    <!-- 10 Classes -->
+                                    <!-- 10 classes -->
                                     <div class="col-12 col-sm-6 col-lg-3">
                                         <div class="card h-100 rhythm-card">
                                             <div class="card-body pricing-card text-center p-4">
@@ -262,7 +266,7 @@
                                         </div>
                                     </div>
 
-                                    <!-- 20 Classes -->
+                                    <!-- 20 classes -->
                                     <div class="col-12 col-sm-6 col-lg-3">
                                         <div class="card h-100 rhythm-card">
                                             <div class="card-body pricing-card text-center p-4">
@@ -322,6 +326,7 @@
                                         </div>
                                     </div>
 
+                                    <!-- standout card -->
                                     <div class="col-12 col-md-6 col-lg-4">
                                         <div class="card h-100 rhythm-card rhythm-card-featured">
                                             <div class="card-ribbon fw-bold">
@@ -414,7 +419,7 @@
         </section>
 
 
-        <!-- booking inquiry -->
+        <!-- booking inquiry linked to web3forms -->
         <section id="booking-inquiry">
 
             <div class="container my-5">
@@ -422,7 +427,7 @@
                 <div class="row justify-content-center">
 
                     <div class="col-12 col-lg-8">
-
+                        <!-- heading -->
                         <div class="text-center mb-4">
                             <h2 class="heading section-title">
                                 Have a <em>question?</em>
@@ -433,7 +438,7 @@
                             </p>
                         </div>
 
-
+                        <!-- bootstrap form and web3forms connection -->
                         <form class="booking-form" action="https://api.web3forms.com/submit" method="post">
 
                             <!-- web3forms access key -->
