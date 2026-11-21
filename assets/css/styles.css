@@ -1324,6 +1324,50 @@ html {
     color: white;
 }
 
+/* find your flow timeline */
+#flow-timeline {
+    background-color: var(--secondary-color-highlight);
+}
+/* adds space between each timeline step */
+.timeline-item {
+    min-height: 150px;
+}
+
+.timeline-text {
+    color: var(--tertiary-color);
+    font-weight: 500;
+}
+
+/* positions the numbered circles in the center */
+.timeline-center {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+/* creates th vertical line connecting the circles */
+.timeline-center::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--secondary-color-darker);
+}
+
+/* styles and keeps circles above the line (z-index) */
+.timeline-marker {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
+
 /* not ready to book section */
 #schedule-cta {
     background-color: var(--secondary-color-highlight);
@@ -1777,48 +1821,30 @@ letter-spacing: .16em;
 #faqs-page .faq-heading {
     color: var(--primary-color-highlight);
     font-family: var(--heading-font);
-    font-size: clamp(2rem, 3vw, 2.4rem);
-    font-weight: 700;
-    line-height: 1.15;
+    font-size: 2rem;
 }
 
-/* FAQ-only Bootstrap accordion overrides */
+/* override bootstrap accordion styling for spacing */
 #faqs-page .accordion {
-    --bs-accordion-border-width: 0;
-    --bs-accordion-bg: transparent;
     display: grid;
     gap: .7rem;
-    min-width: 0;
 }
 
 #faqs-page .accordion-item {
-    overflow: hidden;
-    min-width: 0;
+    overflow: hidden;  
     border: 1px solid var(--line);
     border-radius: 13px !important;
-    background: #fbf8f5;
-    box-shadow: 0 3px 12px rgba(44, 16, 9, .035);
-}
-
-#faqs-page .accordion-header {
-    margin: 0;
 }
 
 #faqs-page .accordion-button {
-    min-width: 0;
-    padding: 1rem 1.1rem;
     border-radius: 0 !important;
     background: #fbf8f5;
     color: var(--tertiary-color);
     font-family: var(--body-font);
-    font-size: clamp(.79rem, 1.3vw, .92rem);
+    font-size: 14px;
     font-weight: 600;
-    line-height: 1.55;
-    text-align: left;
     text-transform: none;
-    box-shadow: none;
     overflow-wrap: anywhere;
-    gap: .7rem;
 }
 
 #faqs-page .accordion-button:hover {
@@ -1827,54 +1853,22 @@ letter-spacing: .16em;
 
 #faqs-page .accordion-button:not(.collapsed) {
     background: linear-gradient(105deg, #f0e1dc, var(--secondary-color-highlight));
-    color: var(--primary-color);
-    box-shadow: none;
 }
-
-#faqs-page .accordion-button::after {
-    flex-shrink: 0;
-    margin-left: auto;
-    filter: none;
-    /* Recolour Bootstrap's SVG arrow using a CSS filter */
-    filter: brightness(0) saturate(100%) invert(16%) sepia(31%) saturate(1376%) hue-rotate(325deg) brightness(92%) contrast(97%);
-}
-
+/* makes button arrow stay dark when clicked */
 #faqs-page .accordion-button:not(.collapsed)::after {
-    filter: brightness(0) saturate(100%) invert(16%) sepia(31%) saturate(1376%) hue-rotate(325deg) brightness(92%) contrast(97%);
+    filter: brightness(0);
 }
 
 #faqs-page .accordion-body {
-    padding: 1rem 1.1rem 1.25rem;
     border-top: 1px solid var(--line);
-    border-radius: 0 !important;
-    background: #fbf8f5;
     color: var(--tertiary-color-highlight);
     font-family: var(--body-font);
-    font-size: .88rem !important;
-    font-weight: 400;
-    line-height: 1.8;
     overflow-wrap: anywhere;
 }
 
 #faqs-page .accordion-body a {
     color: var(--primary-color);
     font-weight: 600;
-    text-decoration-color: #b88968;
-    text-underline-offset: 3px;
-}
-
-#faqs-page .accordion-body a:hover {
-    color: var(--primary-color-highlight);
-}
-
-#faqs-page .accordion-body ul {
-    padding-left: 1.3rem;
-    margin-top: .75rem;
-    margin-bottom: 0;
-}
-
-#faqs-page .accordion-body li+li {
-    margin-top: .35rem;
 }
 
 /* contact section */
@@ -1884,14 +1878,7 @@ letter-spacing: .16em;
 }
 
 .contact-cta {
-    position: relative;
-    background: linear-gradient(
-        135deg,
-        var(--primary-color) 0%,
-        var(--primary-color-highlight) 55%,
-        var(--primary-color-darker) 100%
-    );
-    box-shadow: 0 12px 30px rgba(44, 16, 9, 0.15);
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-color-highlight) 55%, var(--primary-color-darker) 100%);
 }
 
 .contact-cta .eyebrow {
